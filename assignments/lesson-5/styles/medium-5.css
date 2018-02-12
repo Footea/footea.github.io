@@ -1,0 +1,60 @@
+@media only screen and (min-width: 36em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+}
+@media only screen and (max-width: 36em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    section.forecast { display: none; }
+    nav ul { display: none; } 
+     /* hamburger button does not need to be shown */
+}
+
+
+ 
+    
+    
+    
+section { 
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: blue;
+    max-width: 1000px;
+    margin: auto;
+   }
+section.forecast {
+        
+    padding: 5px;
+    line-height: ;
+    text-align: center;
+    background: #B28869;
+    }
+
+section.forecast>table {
+    align-items: center;
+    border: 2px;
+    color: black;
+} 
+/* show the 10-day forecast with the medium view and up */
+
+ article p.town-article {
+    float: left;
+    text-align: left;
+    clear: right;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #242a40;
+    padding: 10px;
+    max-width: 900px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+}  
+  article p.town-article img {
+    
+      width: 62.666%; 
+      float: left; }  /* responsive images */
+
+footer {}
+
