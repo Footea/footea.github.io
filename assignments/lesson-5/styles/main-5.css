@@ -15,11 +15,15 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {
+    padding: .5rem 2%;
     color: white;
     background: #135E66;
     
 }
+
+}
 header h1 {
+    
     font-size: 40px;
     text-align: center;
     margin: 0;
@@ -27,9 +31,8 @@ header h1 {
 }
 
 header img {
-    padding-left: 4em;
-    padding-top: 1em;
-    margin: auto;
+    float: left;
+    margin: 0 2% 0 0;
 }
 header .subheading {
     font-size: 20px;
@@ -64,7 +67,7 @@ nav ul li.active a {
     color: black;
     background-color: #B28869; }
 nav ul li a:hover { 
-    color: black; 
+    color: #226e77; 
     background-color: #B28869; }
 
 main {}
@@ -80,15 +83,9 @@ main h3 {
     
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+main figure img { margin: 0; width: 100%; }
 
-section {
-    display: block; 
-    text-align: center;
-    
-    
-   
-}
+
 article h3 {
     
     color: #66310A;
@@ -109,12 +106,16 @@ footer {
     color: #000000;
     text-align: center;
     clear: both;
+    
 }
-footer aside {
+aside h4 { margin: 0 0; }
+aside p { margin: 0 0;
     
 }
 footer>p {
-    padding: 1em;
+    
+    padding: .75em;
+    margin: 0;
     background-color: #1d5c63;
 } /* This structure refers to p elements that are direct children of the footer element */
 

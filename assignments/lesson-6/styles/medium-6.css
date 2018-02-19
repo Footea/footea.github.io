@@ -1,0 +1,83 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+ 
+   
+
+/*----------- BODY --------------*/
+article p.town-article img { 
+    display: inline-block; 
+    width: 50%;
+    margin: 0 2% 0 2%;
+    float: left;
+    }
+    
+article p.town-article { display: inline-block; }
+    
+
+
+
+/*----------- HEADER --------------*/
+    
+
+
+/*----------- NAVIGATION --------------*/
+  
+  
+
+    
+
+
+/*----------- MAIN --------------*/
+ main section { 
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: blue;
+    padding: 0;
+    margin: 0;
+    
+   }
+    
+main section.forecast {
+    padding: 5px 50px 5px 50px;
+    line-height: ;
+    margin: 0;
+    text-align: center;
+    background: #B28869;
+    }
+    
+table.forecast { border-collapse: collapse; width: 100%; }
+    
+table, th, td {
+    background-color: #fff;
+    padding: 3px;    
+    border: 2px solid;
+}
+
+section.forecast h3 { margin: 0;}
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
+
+
+@media only screen and (max-width: 35rem) {
+    
+/*----------- BODY --------------*/
+    section.forecast { display: none; }
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+ 
+    
+   
+/*----------- MAIN --------------*/
+article p.town-article img {display: block; }
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

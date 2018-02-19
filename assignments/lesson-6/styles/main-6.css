@@ -1,0 +1,167 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    color: #fff;
+    background-color: #135E66;
+}
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+header img {
+    float: left;
+    margin: 0 2% 0 0;
+}
+header .subheading {
+    font-size: .90rem;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    
+}
+
+nav {
+    background-color: #B28869;
+    font-family: Bodoni MT, sans-serif;
+    
+   
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li:first-child a {}
+
+nav ul li.active a {background-color: rgba(0,0,0,0.2); color: black;}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none}
+
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #66310A;
+    margin: 0 0 0 0;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: black;
+    
+}
+main figure { margin:0 2% 0 2%; width: 98%;}
+
+main figure img { margin: 0; width: 100%;}
+
+
+section h3 { margin: 0; }
+
+section.current { display: inline-block; }
+
+section picture img { display: inline-block; width: 15%;
+}
+
+
+
+article h3 {
+    color: #66310A;
+    padding: .25rem;
+    margin: 0;
+}
+
+article p.town-article { 
+    font-family: 'Roboto', sans-serif;
+}
+
+article p.town-article img {
+    width: 100%;
+    margin: 0 2% 2% 2%;
+    float: left;
+    
+}
+
+
+
+
+footer {
+    font-size: 1rem;
+    background-color: #1d5c63;
+    padding: .5rem 2%;
+    text-align: center;
+}
+aside { 
+    font-size: .9rem;
+    margin: 0;
+}
+
+aside h4 { margin: 0 0; }
+
+aside p { margin: 0 0; }
+
+footer>p {
+    font-size: .8rem;
+    color:#fff;
+    padding: .25em;
+    margin: 0;
+    background-color: #1d5c63;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

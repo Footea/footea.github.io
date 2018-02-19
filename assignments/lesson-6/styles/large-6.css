@@ -4,11 +4,17 @@
     
 
 /*----------- BODY --------------*/
-article p.town-article img { width: 29.333%; }
+article p.town-article img { width: 62%; }
 
 
 /*----------- HEADER --------------*/
-
+header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    max-width: 64rem;
+    margin: 0 5% 0 5%
+    
+    
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
 
 
 /*----------- NAVIGATION --------------*/
