@@ -18,8 +18,11 @@ article p.town-article { display: inline-block; }
 
 /*----------- HEADER --------------*/
     
-
-
+header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    max-width: 64rem;
+    margin: auto;
+    
+ }
 /*----------- NAVIGATION --------------*/
   
   
