@@ -1,0 +1,41 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 50rem) {
+
+    
+
+/*----------- BODY --------------*/
+article p.town-article img { width: 62%; }
+
+
+/*----------- HEADER --------------*/
+header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    
+    
+    
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+nav ul { flex-direction: row;}
+nav button { display: none;}
+
+   
+    
+
+    
+
+
+/*----------- MAIN --------------*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin:auto;
+   } 
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

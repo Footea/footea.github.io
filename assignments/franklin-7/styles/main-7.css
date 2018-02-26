@@ -49,35 +49,48 @@ nav button {
 }
 
 nav {
-    
-    font-family: Bodoni MT, sans-serif;
-    
-   
+margin: 1rem auto;
+
+
 }
+
 nav ul {
-    background-color: #B28869;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    
+	list-style-type: none;
+	margin: 0em;
+	padding: 0em;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+    background: #935800;
+    font-family: Bodoni MT, sans-serif;
 }
-nav ul li {}
+
+nav ul li {
+    flex: 1 100%;
+    border-bottom:1px solid #ffff;
+}
+
 nav ul li a {
-    display: block;
-    text-align: center;
-    padding: .8rem 2%;
-    text-decoration: none;
-    color: rgba(255,255,255,0.8);
-    border-top: 1px solid rgba(0,0,0,0.3);
+    display:block;
+	color: rgba(255, 255, 255, 100);
+	text-align: center;
+	padding: .50em;
+	text-decoration: none;
+	font-size: 1.25rem;
 }
 
 nav ul li:first-child a {}
 
-nav ul li.active a {background-color: rgba(0,0,0,0.2); color: black;}
 
+
+nav ul li.active a {background-color: rgba(0,0,0,0.2); color: black;}
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
-nav ul.hide {display: none}
+
+
+
+
+
 
 
 
@@ -100,17 +113,54 @@ main h3 {
     color: black;
     
 }
-main figure { margin:0; width: 100%;}
+main figure { margin: 0; width: 100%;}
 
 main figure img { margin: 0; width: 100%;}
 
 
 section h3 { margin: 0; }
 
-section.current { display: inline-block; }
+section.current { 
+    border: solid 1px;
+    display: inline-block; }
 
 section picture img { display: inline-block; width: 15%;
 }
+
+/*----------- MAIN GALLERY --------------*/
+/* Grid layout */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem; 
+}
+
+.gallery-image img {
+    width: 13rem;
+    margin: 0;
+}
+
+/* rounded corners - boxmodel */
+.gallery-image img {
+    border-radius: 10px 15px;
+    opacity: .60;
+}
+
+
+/* simple opacity */
+.opac {opacity: .5;}
+
+
+/* hover effect - not anchor tags around images */
+img:hover {box-shadow: 5px 5px 10px gray;}
+
+
+figcaption {}
+
+
+
+
+
 
 
 
@@ -120,19 +170,21 @@ article h3 {
     margin: 0;
 }
 
-article p.town-article { 
+.article {
+    display: flex;
+    flex-direction: column;     
+} 
+
+.town-article { 
     font-family: 'Roboto', sans-serif;
 }
 
-article p.town-article img {
+.town-img {
     width: 100%;
-    margin: 0 0 0 0 ;
-    float: left;
-    
 }
 
 
-
+/*----------- Footer --------------*/
 
 footer {
     font-size: 1rem;

@@ -67,6 +67,9 @@ section.forecast h3 { margin: 0;}
     
 /*----------- BODY --------------*/
     section.forecast { display: none; }
+    nav ul {
+		flex-direction: row;
+	}
 
 
 /*----------- HEADER --------------*/
