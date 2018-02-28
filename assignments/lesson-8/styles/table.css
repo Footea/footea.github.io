@@ -1,0 +1,55 @@
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #D3D3D3;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+}
+
+thead > tr > th {
+  background-color: #7fb9c2;
+  color: #000000;  
+  font-size: 30px;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+th,td {
+
+  border: 1px solid #D3D3D3;
+  padding: 10px 5px;
+  }
+
+
+tbody th {
+  font-size: 20px;
+  color: white;
+  background-color: #628ca6;
+}
+
+
+tbody td {
+  text-align: center;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #e7ffed;
+}
+tfoot > tr > td {
+  text-align: center;
+  background-color: #7fb9c2;
+  color: #000000;  
+  font-size: 12px;
+}
+
+table:hover {box-shadow: 5px 5px 10px #628ca6;}
+    
+
