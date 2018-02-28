@@ -56,6 +56,6 @@ tfoot > tr > td {
   font-size: 12px;
 }
 
-table:hover {box-shadow: 5px 5px 10px #628ca6;}
+table {box-shadow: 5px 5px 15px #628ca6;}
     
 
