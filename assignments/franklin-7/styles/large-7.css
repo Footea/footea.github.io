@@ -1,16 +1,28 @@
 /* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 801px){
 
     
 
 /*----------- BODY --------------*/
-article p.town-article img { width: 62%; }
+.article {
+    display: flex;
+    flex-direction: row;
+} 
+.town-article { 
+    width: 50%;
+    margin: 1rem;
+}
+
+ .town-img {
+    width: 50%; 
+}
 
 
 /*----------- HEADER --------------*/
 header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     
-    
+    max-width: 67rem;
+    margin: auto;
     
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
@@ -28,6 +40,9 @@ nav button { display: none;}
 
 
 /*----------- MAIN --------------*/
+    
+    
+/*----------- Gallery Grid --------------*/
 
 .gallery {
     display: grid;
@@ -35,6 +50,66 @@ nav button { display: none;}
     grid-gap: 2rem;
     margin:auto;
    } 
+    
+  
+/*----------- Weather Summary Flex--------------*/    
+    
+#summary { 
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid black;
+    max-width: 960px;
+    padding: 0;
+    margin: Auto;
+}
+    
+#summary > .highlow {
+    border: 1px solid black;
+    padding: 10px;
+    flex: auto;       
+}
+
+#summary > .current {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px
+}
+    
+#summary > .conditions {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px;        
+} 
+    
+#summary > .windchill {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px 10px;   
+}    
+    
+    
+    
+    
+    main section.forecast {
+    padding: 5px 50px 5px 50px;
+    line-height: ;
+    margin: 0;
+    text-align: center;
+    background: #B28869;
+     
+}
+    
+/*----------- Forecast Table --------------*/
+    
+table.forecast { border-collapse: collapse; width: 100%; }
+    
+table, th, td {
+    background-color: #fff;
+    padding: 3px;    
+    border: 2px solid;
+}
+
+section.forecast h3 { margin: 0;}
 
 /*----------- FOOTER --------------*/
     
