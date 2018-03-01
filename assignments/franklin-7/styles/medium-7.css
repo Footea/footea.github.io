@@ -1,5 +1,5 @@
 /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 560px) and (max-width:800px){
+@media only screen and (min-width: 560px) and (max-width:808px){
  
    
 
@@ -29,8 +29,13 @@ header, nav, main, section, footer { /* the comma means apply the following CSS 
     
  }
 /*----------- NAVIGATION --------------*/
-nav ul { flex-direction: row;}
-nav button { display: none;}
+nav ul { flex-direction: column;}
+    nav button { 
+    display flex: 
+    flex: auto
+    }
+nav ul.hide {display: none;}
+
 
     
 
