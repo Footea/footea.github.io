@@ -49,7 +49,7 @@ nav button {
 }
 
 nav {
-margin: 1rem auto;
+margin: 0;
 
 
 }
@@ -124,11 +124,13 @@ section.current {
     border: solid 1px;
     display: inline-block; }
 
-section picture img { display: inline-block; width: 15%;
+section picture img { display: block; width: 20%;
 }
 
 /*----------- MAIN GALLERY --------------*/
-/* Grid layout */
+
+/*------Gallery Grid----------*/
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -158,10 +160,54 @@ img:hover {box-shadow: 5px 5px 10px gray;}
 figcaption {}
 
 
+/*---- Weather Summary Flex ----------*/   
+
+.img weathericon {
+    
+    align-content: center;
+}
+    
+#summary { 
+    display: flex;
+    flex-direction: column; 
+    border: 2px solid black;
+    width: 100%
+    padding: 0;
+    margin: 0;
+}
+    
+#summary > .highlow {
+    
+    text-align: center;
+    flex: auto;       
+}
+
+#summary > .current {
+    
+    flex: auto;
+    text-align: center;
+    padding: 10px
+}
+    
+#summary > .conditions {
+    
+    flex: auto;
+    padding: 10px;        
+} 
+    
+#summary > .windchill {
+   
+    flex: auto;
+    padding: 10px 10px;   
+}
+    
+    
 
 
 
 
+
+/*----Town Article and Image-----*/
 
 
 article h3 {
