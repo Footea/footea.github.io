@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <meta name="author" content="Aaron Foote">
-  <meta name="description" content="stormcenter input from user storms">
+  <meta name="description" content="stormcenter input from user  about storms">
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Roboto , serif" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -28,26 +28,95 @@
         
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li> 
-            <li><a href="#">Storm Center</a></li> 
+            <li class="active"><a href="#">Storm Center</a></li> 
             <li><a href="https://footea.github.io/assignments/franklin-7/gallery.html">Gallery</a></li> 
         </ul>
     </nav>
     
     
 
-    <main>
+   
         <section id=flex-bar>
             <h2 class="title">StormCenter</h2>
-        </section>
+        </section>  
+        <section id="form-flex">
         
-        <section></section>
-        <h3></h3>	
-        <article></article>
+        <aside class="left">
+        <!-- You can also use value="25%" max="100%"-->
+        <!-- This depends on how many sections of form you have -->
+        <p>Progress:<progress value="1" max="2"></progress></p>
+
+        <form action="http://127.0.0.1:63623/assignments/lesson-8/thanks.html" method="post">
+
+
+        <fieldset>
+            <legend><span>Personal Information</span></legend>
+            <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z]{5,75}" required></label>
+            <label><span>Email:</span><input name="email" type="email" placeholder="example@domainname.com"></label>  
+            <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9-]{12}" required></label> 
+            <label><span>Zip Code:</span><input name="zipcode" type="numbers" placeholder="XXXXX" pattern="[0-9]{5}" required></label> 
+        </fieldset>
+
+
+        <fieldset>
+            <legend><span>Storm Information</span></legend>
+            <label><span>Storm Date:</span><input name="date" type="date"></label>
+             <label>
+            <span>Storm Type:</span>
+            <input type="text" name="stormtype" list="stypes" pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urrican|[Tt]hunderstorm|[Tt]ornado">   
+            <datalist id="stypes">
+            <option value="Flash Flood">Flash Flood</option>
+            <option value="Hail">Hail</option>
+            <option value="Hurricane">Hurrican</option>
+            <option value="Thunderstorm">Thunderstorm</option>
+            <option value="Tornado">Tornado</option>
+            </datalist>
+            </label>
+            <label for="stormrating"><span>Storm Severity (1 to 10) with 10 being the worst:</span></label>
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="stormRating(this.value)" onchange="stormRating(this.value)">
+            <span id="ratingvalue">5</span>
+            <label for="r1"><span>Is user in-danger? (Select One)</span></label>
+                <input type="radio" name="r1" value="Yes"> Yes<br>
+                <input type="radio" name="r1" value="No" checked> No <br>
+                <input type="radio" name="r1" value="Maybe"> Maybe <br>
+
+            <label><span>Additional Info</span></label>
+            <textarea name="message" maxlenght="140" rows="5"></textarea>
+            <label>
+            <span>Storm Region</span>
+            <select>   
+                <option selected> Choose a Region</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springville">Springville</option>
+            </select>
+            </label>
+        </fieldset>
+
+
+        <input type="submit" value="Storm Data" class="submitBtn">
+        <input type="reset" value="Reset" class="resetBtn">                             
+        </form>
+        </aside>
+
+        <aside class="right">
+            <h3>Storm Images</h3>
+            <div class="storm-image"><a href="#"><img src="images/wavecrash620-350.jpg" alt="Weather Pic" width="300" height="auto"></a></div>
+            <div class="storm-image"><a href="#"><img src="images/cloudcity525-350.jpg" alt="Weather Pic" width="300" height="auto"></a></div>
+            <div class="storm-image"><a href="#"><img src="images/bikerinrain526-350.jpg" alt="Weather Pic" width="300" height="auto"></a>
+            </div>
+            <div class="storm-image"><a href="#">
+            <img src="images/lightening622-350.jpg" alt="Weather Pic" width="300" height="auto"></a>
+            </div>
+
+        </aside>
+    
+    </section>
        
-    </main>
+    
     
   
     <footer>
@@ -68,6 +137,6 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js" ></script>
-    <script src="scripts/windchill.js" ></script>
-</body>
+    <script src="scripts/stormrating.js" ></script>
+   </body>
 </html>

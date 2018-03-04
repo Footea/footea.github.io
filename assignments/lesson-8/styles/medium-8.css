@@ -1,5 +1,5 @@
 /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 37.5rem) {
+@media only screen and (min-width: 560px) and (max-width:807px){
  
    
 
@@ -16,7 +16,7 @@
 }
 
  .town-img {
-    width: 50%; 
+    width: 75%; 
 }
     
 
@@ -25,45 +25,125 @@
 /*----------- HEADER --------------*/
     
 header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-    max-width: 67rem;
+    max-width: 1120px;
     margin: auto;
     
  }
 /*----------- NAVIGATION --------------*/
+nav ul { flex-direction: column;}
+    nav button { 
+    display flex: 
+    flex: auto
+    }
+nav ul.hide {display: none;}
+
+
+    
+
   
-nav ul { flex-direction: row;}
-nav button { display: none;}
+/*----------- Storm Center Form --------------*/
+/*-------COLUMNS -------*/
+    #form-flex {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+        font-family: Modini MT, sans-serif;
 
-/*----------- MAIN --------------*/    
+        }
 
-/*------Title Bar Storm Center Page --------------*/
+    #form-flex > .left {
+        flex: auto;
+        width: 50%;	
+    }
+    #form-flex > .right {
+        display: none;
+        border: 1px solid red;
+        text-align: center;
+        width: 30%;
+    } 
+    
+    
+    
+   
+  
+/*---------- Form Submit Buttons ----------*/
+    input.submitBtn {
+        -webkit-appearance: none;
+        color: #fff;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: .5em;
+        font-size: 1em;
+        padding: .6em;
+        background: green;
+        box-shadow: 4px 4px 10px #666;
 
-#flex-bar {
-  display: flex;
-  flex-direction: row;
-}
+    }
 
-#flex-bar > .title {
-  background-color: saddlebrown;
-  color: white;
-  flex: auto;
-  padding: 1rem;
-  border: 1px solid white;
-  text-align: center;
-}
-/*-------Gallery Grid --------------*/
+    input.resetBtn {
+        -webkit-appearance: none;
+        color: black;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: white;
+        box-shadow: 4px 4px 10px #666;
+
+    }
+    
+    
+/*---- Gallery Grid ----------*/    
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }  
     
+/*---- Town Page Weather Summary Flex ----------*/      
     
- main section { 
-    border: none;
+#summary { 
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid black;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
+    
+#summary > .highlow {
+    border: 1px solid black;
+    padding: 10px;
+    flex: auto;       
+}
+
+#summary > .current {
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 10px
+}
+    
+#summary > .conditions {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px;        
+} 
+    
+#summary > .windchill {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px 10px;   
+}
+    
+    
+    
+    
+/*----Town Page Forecast Table ----------*/        
     
 main section.forecast {
     padding: 5px 50px 5px 50px;
@@ -82,16 +162,40 @@ table, th, td {
 }
 
 section.forecast h3 { margin: 0;}
+    
+    
+/*--------Thank You Page ----------*/   
+    main.thanks {
+        width:90%;
+        margin: auto;
+        
+        
+    }
+    
+    h1.thanks-title {
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+                
+    }
+    
+    article.thanks-page {
+        
+        text-align: center;
+        
+        
+    }
 
 /*----------- FOOTER --------------*/
     
 } /* end of media query */
 
 
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 559px) {
     
 /*----------- BODY --------------*/
 section.forecast { display: none; }
+nav ul.hide {display: none;}
     
 
 
@@ -100,11 +204,13 @@ section.forecast { display: none; }
 
 
 /*----------- NAVIGATION --------------*/
- nav ul.hide {display: none;}
+ 
     
    
 /*----------- MAIN --------------*/
-    
+ #form-flex > .right {
+        display: none;
+    }   
    
     
     
