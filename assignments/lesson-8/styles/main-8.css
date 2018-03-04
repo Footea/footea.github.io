@@ -130,48 +130,113 @@ section picture img { display: block; width: 20%;
 /*----------- MAIN GALLERY --------------*/
 /*----------- Storm Center Form --------------*/
  /*-----COLUMNS -----*/
-.left {
-    width: 90;	
+    #form-flex {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+        font-family: Modini MT, sans-serif;
+
+        }
+
+    #form-flex > .left {
+        flex: auto;
+        width: 50%;	
+    }
+    #form-flex > .right {
+        border: 1px solid red;
+        text-align: center;
+        width: 30%;
+    }
+
+form#conference {
+    margin: 1em 3%;
+    
 }
-.right {
-    display: none;
+
+fieldset {
+    background-color: whitesmoke;
+    border-radius: .8em;
+    margin:  1.5rem;
+    border: 1px solid #917a56;
+    
 }
+legend {
+    color: white;
+    margin-left: 6%;
+    padding: .5rem;
+    border: 1px solid #917a56;
+    background-color: #135E66;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color:  #917a56;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
   
 /*-----buttons -----*/
-input.submitBtn {
-    -webkit-appearance: none;
-    color: #fff;
-    border: 1px solid #111;
-    border-radius: 7px;
-    width: 50%;
-    margin: .5em;
-    font-size: 1em;
-    padding: .6em;
-    background: green;
-    box-shadow: 4px 4px 10px #666;
+    input.submitBtn {
+        -webkit-appearance: none;
+        color: #fff;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: .5em;
+        font-size: 1em;
+        padding: .6em;
+        background: green;
+        box-shadow: 4px 4px 10px #666;
+
+
+
+    }
+
+    input.resetBtn {
+        -webkit-appearance: none;
+        color: black;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: white;
+        box-shadow: 4px 4px 10px #666;
+
+    }
+
+
+
+
+/*--------Thank You Page ----------*/   
+    main.thanks {
+        width:90%;
+        margin: auto;
+        
+    }
     
+    h1.thanks-title {
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+                
+    }
     
-    
-}
-
-input.resetBtn {
-    -webkit-appearance: none;
-    color: black;
-    border: 1px solid #111;
-    border-radius: 7px;
-    width: 40%;
-    margin: .5em;
-    font-size: 1em;
-    padding: .4em;
-    background: white;
-    box-shadow: 4px 4px 10px #666;
-      
-}
-
-
-
-
-
+    article.thanks-page {
+        
+        text-align: center;
+        
+    }
 
 
 /*------Gallery Grid----------*/
