@@ -66,13 +66,13 @@
             <label><span>Storm Date:</span><input name="date" type="date"></label>
              <label>
             <span>Storm Type:</span>
-            <input type="text" name="stormtype" list="stypes" pattern="[Ff]lash [Ff]lood|[Hh]ail|[Hh]urrican|[Tt]hunderstorm|[Tt]ornado">   
+            <input type="text" name="stormtype" list="stypes">   
             <datalist id="stypes">
-            <option value="Flash Flood">Flash Flood</option>
-            <option value="Hail">Hail</option>
-            <option value="Hurricane">Hurrican</option>
-            <option value="Thunderstorm">Thunderstorm</option>
-            <option value="Tornado">Tornado</option>
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
             </datalist>
             </label>
             <label for="stormrating"><span>Storm Severity (1 to 10) with 10 being the worst:</span></label>
@@ -137,6 +137,14 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js" ></script>
-    <script src="scripts/stormrating.js" ></script>
+
+    <script>
+    function stormRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}    
+        
+    </script>
+    
+    
    </body>
 </html>
