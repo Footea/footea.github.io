@@ -5,7 +5,7 @@
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Modini MT, sans-serif;
+    font-family: "Modini MT", sans-serif;
 }
 
 
@@ -62,7 +62,7 @@ nav ul {
 	display: flex;
 	flex-direction: column;
     background: #935800;
-    font-family: Bodoni MT, sans-serif;
+    font-family: "Bodoni MT", sans-serif;
 }
 
 nav ul li {
@@ -72,7 +72,7 @@ nav ul li {
 
 nav ul li a {
     display:block;
-	color: rgba(255, 255, 255, 100);
+	color: rgba(255, 255, 255, 80);
 	text-align: center;
 	padding: .50em;
 	text-decoration: none;
@@ -135,7 +135,7 @@ section picture img { display: block; width: 20%;
         flex-direction: row;
         width: 95%;
         margin: auto;
-        font-family: Modini MT, sans-serif;
+        font-family: "Modini MT", sans-serif;
 
         }
 
@@ -186,7 +186,7 @@ label span {
   
 /*-----buttons -----*/
     input.submitBtn {
-        -webkit-appearance: none;
+       
         color: #fff;
         border: 1px solid #111;
         border-radius: 7px;
@@ -202,7 +202,7 @@ label span {
     }
 
     input.resetBtn {
-        -webkit-appearance: none;
+        
         color: black;
         border: 1px solid #111;
         border-radius: 7px;

@@ -32,8 +32,8 @@ header, nav, main, section, footer { /* the comma means apply the following CSS 
 /*----------- NAVIGATION --------------*/
 nav ul { flex-direction: column;}
     nav button { 
-    display flex: 
-    flex: auto
+    display: flex; 
+    flex: auto;
     }
 nav ul.hide {display: none;}
 
@@ -48,7 +48,7 @@ nav ul.hide {display: none;}
         flex-direction: row;
         width: 95%;
         margin: auto;
-        font-family: Modini MT, sans-serif;
+        font-family: "Modini MT", sans-serif;
 
         }
 
@@ -69,7 +69,7 @@ nav ul.hide {display: none;}
   
 /*---------- Form Submit Buttons ----------*/
     input.submitBtn {
-        -webkit-appearance: none;
+        
         color: #fff;
         border: 1px solid #111;
         border-radius: 7px;
@@ -83,7 +83,7 @@ nav ul.hide {display: none;}
     }
 
     input.resetBtn {
-        -webkit-appearance: none;
+        
         color: black;
         border: 1px solid #111;
         border-radius: 7px;
@@ -147,7 +147,7 @@ nav ul.hide {display: none;}
     
 main section.forecast {
     padding: 5px 50px 5px 50px;
-    line-height: ;
+    
     margin: 0;
     text-align: center;
     background: #B28869;

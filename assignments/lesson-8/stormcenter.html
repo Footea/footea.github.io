@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Storm Center</title>
   <meta name="author" content="Aaron Foote">
-  <meta name="description" content="stormcenter input from user  about storms">
+  <meta name="description" content="stormcenter input from user about storms">
   <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=Roboto , serif" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -16,7 +16,7 @@
 <body>
 
 	<header>
-        <img src="images/weatherwatcherlogo159x53.png" alt="Weather Watcher logo" width="" height="">
+        <img src="images/weatherwatcherlogo159x53.png" alt="Weather Watcher logo" width="159" height="53">
         <h1>Weather Watcher</h1>
         <div class="subheading"><em>Showing Weather and Telling the Story</em></div>
     </header>
@@ -45,9 +45,7 @@
         <section id="form-flex">
         
         <aside class="left">
-        <!-- You can also use value="25%" max="100%"-->
-        <!-- This depends on how many sections of form you have -->
-        <p>Progress:<progress value="1" max="2"></progress></p>
+            
 
         <form action="https://footea.github.io/assignments/lesson-8/thanks.html" method="post">
 
@@ -57,17 +55,17 @@
             <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z]{5,75}" required></label>
             <label><span>Email:</span><input name="email" type="email" placeholder="example@domainname.com"></label>  
             <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9-]{12}" required></label> 
-            <label><span>Zip Code:</span><input name="zipcode" type="numbers" placeholder="XXXXX" pattern="[0-9]{5}" required></label> 
+            <label><span>Zip Code:</span><input name="zipcode" type="number" placeholder="XXXXX"></label> 
         </fieldset>
 
 
         <fieldset>
             <legend><span>Storm Information</span></legend>
-            <label><span>Storm Date:</span><input name="date" type="date"></label>
+            <label for="stormdate"><span>Storm Date:</span><input type="date" id="stormdate"></label>
              <label>
             <span>Storm Type:</span>
-            <input type="text" name="stormtype" list="stypes">   
-            <datalist id="stypes">
+            <input type="text" name="stormtype" list="stormtypes">   
+            <datalist id="stormtypes">
             <option value="Flash Flood"></option>
             <option value="Hail"></option>
             <option value="Hurricane"></option>
@@ -75,7 +73,7 @@
             <option value="Tornado"></option>
             </datalist>
             </label>
-            <label for="stormrating"><span>Storm Severity (1 to 10) with 10 being the worst:</span></label>
+            <label for="rating"><span>Storm Severity (1 to 10) with 10 being the worst:</span></label>
             <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="stormRating(this.value)" onchange="stormRating(this.value)">
             <span id="ratingvalue">5</span>
             <label for="r1"><span>Is user in-danger? (Select One)</span></label>
@@ -84,7 +82,7 @@
                 <input type="radio" name="r1" value="Maybe"> Maybe <br>
 
             <label><span>Additional Info</span></label>
-            <textarea name="message" maxlenght="140" rows="5"></textarea>
+            <textarea name="message" rows="3" cols="30" maxlength="140"></textarea>
             <label>
             <span>Storm Region</span>
             <select>   
@@ -104,12 +102,12 @@
 
         <aside class="right">
             <h3>Storm Images</h3>
-            <div class="storm-image"><a href="#"><img src="images/wavecrash620-350.jpg" alt="Weather Pic" width="300" height="auto"></a></div>
-            <div class="storm-image"><a href="#"><img src="images/cloudcity525-350.jpg" alt="Weather Pic" width="300" height="auto"></a></div>
-            <div class="storm-image"><a href="#"><img src="images/bikerinrain526-350.jpg" alt="Weather Pic" width="300" height="auto"></a>
+            <div class="storm-image"><a href="#"><img src="images/wavecrash620-350.jpg" alt="Weather Pic" width="300" height="200"></a></div>
+            <div class="storm-image"><a href="#"><img src="images/cloudcity525-350.jpg" alt="Weather Pic" width="300" height="200"></a></div>
+            <div class="storm-image"><a href="#"><img src="images/bikerinrain526-350.jpg" alt="Weather Pic" width="300" height="200"></a>
             </div>
             <div class="storm-image"><a href="#">
-            <img src="images/lightening622-350.jpg" alt="Weather Pic" width="300" height="auto"></a>
+            <img src="images/lightening622-350.jpg" alt="Weather Pic" width="300" height="200"></a>
             </div>
 
         </aside>

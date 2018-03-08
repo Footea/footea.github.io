@@ -93,7 +93,7 @@ nav button { display: none;}
         display: flex;
         flex-direction: row;
         width: 98%;
-        font-family: Modini MT, sans-serif;
+        font-family: "Modini MT", sans-serif;
 
         }
 
@@ -111,7 +111,7 @@ nav button { display: none;}
 
     /*-----buttons -----*/
     input.submitBtn {
-        -webkit-appearance: none;
+        
         color: #fff;
         border: 1px solid black;
         border-radius: 7px;
@@ -127,7 +127,7 @@ nav button { display: none;}
     }
 
     input.resetBtn {
-        -webkit-appearance: none;
+        
         color: black;
         border: 1px solid black;
         border-radius: 7px;
@@ -181,7 +181,7 @@ nav button { display: none;}
     
     main section.forecast {
     padding: 5px 50px 5px 50px;
-    line-height: ;
+    
     margin: 0;
     text-align: center;
     background: #B28869;
