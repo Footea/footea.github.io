@@ -31,7 +31,7 @@ header, nav, main, section, footer { /* the comma means apply the following CSS 
 /*----------- NAVIGATION --------------*/
 nav ul { flex-direction: column;}
     nav button { 
-    display flex: 
+    display: flex;
     flex: auto
     }
 nav ul.hide {display: none;}
@@ -93,7 +93,7 @@ nav ul.hide {display: none;}
     
 main section.forecast {
     padding: 5px 50px 5px 50px;
-    line-height: ;
+    line-height: normal;
     margin: 0;
     text-align: center;
     background: #B28869;

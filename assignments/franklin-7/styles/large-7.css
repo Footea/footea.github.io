@@ -92,7 +92,7 @@ nav button { display: none;}
     
     main section.forecast {
     padding: 5px 50px 5px 50px;
-    line-height: ;
+    line-height:  normal;
     margin: 0;
     text-align: center;
     background: #B28869;
