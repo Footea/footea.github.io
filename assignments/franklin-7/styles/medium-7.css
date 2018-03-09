@@ -93,7 +93,7 @@ nav ul.hide {display: none;}
     
 main section.forecast {
     padding: 5px 50px 5px 50px;
-    line-height: normal;
+    line-height: 1.6;
     margin: 0;
     text-align: center;
     background: #B28869;
