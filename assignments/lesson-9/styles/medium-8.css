@@ -197,18 +197,21 @@ main h1 {
     padding: .25rem;
     margin: 0;
 }
+  
 
-.home-article {
+    .home-article {
     display: flex;
     flex-direction: row;     
 } 
+    
 
 .home-article { 
     font-family: 'Roboto', sans-serif;
 }
 
 .home-fig {
-    width: 100%;
+    width: 50%;
+    float: left;
 }
 
 /*----------- FOOTER --------------*/

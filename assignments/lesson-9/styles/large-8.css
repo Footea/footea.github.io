@@ -202,44 +202,46 @@ nav button { display: none;}
 
     /*----------- FOOTER --------------*/
 
-    } /* end of media query */
+     /* end of media query */
 
     /*----------- NAVIGATION --------------*/
 
     nav ul { flex-direction: row;}
     nav button { display: none;}
 
-  
+  /*----Home Page secion JSON -----*/ 
 
-    .hpage   article {
+   
+    #hpage   article {
         display: inline;
         width: 20%;
         float: left;
         margin-bottom: 0;
+        
     }
 
-    .hpage p {
+    #hpage p {
         font-size: 14px;
         margin: 5px 0;
         color: black; 
         font-weight: normal;  
     }
-    .hpage p:nth-child(3){
+    #hpage p:nth-child(3){
         font-style: italic;
     }
     
-     .hpage p:nth-child(2){
+     #hpage p:nth-child(2){
         text-align: center; 
         font-style: italic;
     }
 
-    .hpage ul {
+    #hpage ul {
         font-size: 12px;
         margin-top: 10px;
         color: black;
     }
 
-    .hpage h2 {
+    #hpage h2 {
         font-size: 1.5rem;
         letter-spacing: -2px;
         margin-bottom: 10px;
@@ -249,31 +251,32 @@ nav button { display: none;}
         /*----Home Page Article and Image-----*/
 
 
-main h1 {
+    main h1 {
     color: #66310A;
     padding: .25rem;
     margin: 0;
 }
   
 
-    .home-article {
+    #home-article {
     display: flex;
     flex-direction: row;     
 } 
     
 
-.home-article { 
+    #home-article { 
     font-family: 'Roboto', sans-serif;
 }
 
-.home-fig {
+    #home-fig {
     width: 50%;
     float: left;
+    overflow: hidden;
 }
 
     
     
-    
+ }   
     
 
 
