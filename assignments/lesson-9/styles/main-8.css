@@ -348,6 +348,29 @@ article h3 {
 }
 
 
+/*----Home Page Article and Image-----*/
+
+
+main h1 {
+    color: #66310A;
+    padding: .25rem;
+    margin: 0;
+}
+
+#home-article {
+    display: flex;
+    flex-direction: column;     
+} 
+
+#home-article { 
+    font-family: 'Roboto', sans-serif;
+}
+
+#home-fig {
+    width: 100%;
+}
+
+
 /*----------- Footer --------------*/
 
 footer {

@@ -185,6 +185,31 @@ section.forecast h3 { margin: 0;}
         
         
     }
+    
+    
+    
+    
+    /*----Home Page Article and Image-----*/
+
+
+main h1 {
+    color: #66310A;
+    padding: .25rem;
+    margin: 0;
+}
+
+.home-article {
+    display: flex;
+    flex-direction: row;     
+} 
+
+.home-article { 
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-fig {
+    width: 100%;
+}
 
 /*----------- FOOTER --------------*/
     

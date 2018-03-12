@@ -9,6 +9,8 @@ request.onload = function() {
 	var jsondata = request.response;
 	var cities = jsondata['towns'];
 	for (var i = 0; i < cities.length; i++) {
+        
+        if (i === 2) {continue;}
         var myArticle = document.createElement('article');
 		var city = document.createElement('h2');
 		var year = document.createElement('p');
@@ -25,7 +27,7 @@ request.onload = function() {
         year.textContent = 'Established: ' + cities[i].yearFounded;
         motto.textContent = '"' + cities[i].motto + '"';
         population.textContent ='Pop: ' + cities[i].currentPopulation;
-        avgrain.textContent = 'Average Rainfall: ' + cities[i].averageRainfall;
+        avgrain.textContent = 'Average Rainfall: ' + cities[i].averageRainfall + '"';
         
         var currentEvents = cities[i].events;
         for (var j = 0; j < currentEvents.length; j++) {

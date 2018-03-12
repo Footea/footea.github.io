@@ -209,11 +209,13 @@ nav button { display: none;}
     nav ul { flex-direction: row;}
     nav button { display: none;}
 
+  
 
-
-    .hpage article {
-        width: 33%;
+    .hpage   article {
+        display: inline;
+        width: 20%;
         float: left;
+        margin-bottom: 0;
     }
 
     .hpage p {
@@ -223,6 +225,11 @@ nav button { display: none;}
         font-weight: normal;  
     }
     .hpage p:nth-child(3){
+        font-style: italic;
+    }
+    
+     .hpage p:nth-child(2){
+        text-align: center; 
         font-style: italic;
     }
 
@@ -236,8 +243,33 @@ nav button { display: none;}
         font-size: 1.5rem;
         letter-spacing: -2px;
         margin-bottom: 10px;
-        color: slategrey;  
+        
     }
+    
+        /*----Home Page Article and Image-----*/
+
+
+main h1 {
+    color: #66310A;
+    padding: .25rem;
+    margin: 0;
+}
+  
+
+    .home-article {
+    display: flex;
+    flex-direction: row;     
+} 
+    
+
+.home-article { 
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-fig {
+    width: 50%;
+    float: left;
+}
 
     
     
