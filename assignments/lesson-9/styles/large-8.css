@@ -212,8 +212,8 @@ nav button { display: none;}
   /*----Home Page secion JSON -----*/ 
 
    
-    #hpage   article {
-        display: inline;
+    #hpage article {
+        ;
         width: 20%;
         float: left;
         margin-bottom: 0;
@@ -265,11 +265,12 @@ nav button { display: none;}
     
 
     #home-article { 
+    
     font-family: 'Roboto', sans-serif;
 }
 
     #home-fig {
-    width: 50%;
+    width: 40%;
     float: left;
     overflow: hidden;
 }

@@ -157,41 +157,41 @@ section picture img { display: block; width: 20%;
         width: 30%;
     }
 
-form#conference {
-    margin: 1em 3%;
-    
-}
+    form#conference {
+        margin: 1em 3%;
 
-fieldset {
-    background-color: whitesmoke;
-    border-radius: .8em;
-    margin:  1.5rem;
-    border: 1px solid #917a56;
-    
-}
-legend {
-    color: white;
-    margin-left: 6%;
-    padding: .5rem;
-    border: 1px solid #917a56;
-    background-color: #135E66;
-    border-radius: .4em;
-}
+    }
 
-label {
-    display: block;
-    margin: .5em;
-}
+    fieldset {
+        background-color: whitesmoke;
+        border-radius: .8em;
+        margin:  1.5rem;
+        border: 1px solid #917a56;
 
-label span {
-    display: block;
-    font-size: .8em;
-    color:  #917a56;
-    padding-top: .9em;
-    padding-bottom: .2em;
-}
+    }
+    legend {
+        color: white;
+        margin-left: 6%;
+        padding: .5rem;
+        border: 1px solid #917a56;
+        background-color: #135E66;
+        border-radius: .4em;
+    }
 
-  
+    label {
+        display: block;
+        margin: .5em;
+    }
+
+    label span {
+        display: block;
+        font-size: .8em;
+        color:  #917a56;
+        padding-top: .9em;
+        padding-bottom: .2em;
+    }
+
+
 /*-----buttons -----*/
     input.submitBtn {
        
@@ -249,158 +249,159 @@ label span {
 
 /*------Gallery Grid----------*/
 
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem; 
-}
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem; 
+    }
 
-.gallery-image img {
-    width: 13rem;
-    margin: 0;
-}
+    .gallery-image img {
+        width: 13rem;
+        margin: 0;
+    }
 
-/* rounded corners - boxmodel */
-.gallery-image img {
-    border-radius: 10px 15px;
-    opacity: .60;
-}
-
-
-/* simple opacity */
-.opac {opacity: .5;}
+    /* rounded corners - boxmodel */
+    .gallery-image img {
+        border-radius: 10px 15px;
+        opacity: .60;
+    }
 
 
-/* hover effect - not anchor tags around images */
-img:hover {box-shadow: 5px 5px 10px gray;}
+    /* simple opacity */
+    .opac {opacity: .5;}
 
 
-figcaption {}
+    /* hover effect - not anchor tags around images */
+    .gallery-image img:hover {box-shadow: 5px 5px 10px gray;}
 
 
-/*---- Weather Summary Flex ----------*/   
+    figcaption {}
 
-.img weathericon {
-    
-    align-content: center;
-}
-    
-#summary { 
-    display: flex;
-    flex-direction: column; 
-    border: 2px solid black;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-    
-#summary > .highlow {
-    
-    text-align: center;
-    flex: auto;       
-}
 
-#summary > .current {
-    
-    flex: auto;
-    text-align: center;
-    padding: 10px
-}
-    
-#summary > .conditions {
-    
-    flex: auto;
-    padding: 10px;        
-} 
-    
-#summary > .windchill {
-   
-    flex: auto;
-    padding: 10px 10px;   
-}
-    
-    
+    /*---- Weather Summary Flex ----------*/   
+
+    .img weathericon {
+
+        align-content: center;
+    }
+
+    #summary { 
+        display: flex;
+        flex-direction: column; 
+        border: 2px solid black;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #summary > .highlow {
+
+        text-align: center;
+        flex: auto;       
+    }
+
+    #summary > .current {
+
+        flex: auto;
+        text-align: center;
+        padding: 10px
+    }
+
+    #summary > .conditions {
+
+        flex: auto;
+        padding: 10px;        
+    } 
+
+    #summary > .windchill {
+
+        flex: auto;
+        padding: 10px 10px;   
+    }
 
 
 
 
 
-/*----Town Article and Image-----*/
 
 
-article h3 {
-    color: #66310A;
-    padding: .25rem;
-    margin: 0;
-}
-
-.article {
-    display: flex;
-    flex-direction: column;     
-} 
-
-.town-article { 
-    font-family: 'Roboto', sans-serif;
-}
-
-.town-img {
-    width: 100%;
-}
+    /*----Town Article and Image-----*/
 
 
-/*----Home Page Article and Image-----*/
+    article h3 {
+        color: #66310A;
+        padding: .25rem;
+        margin: 0;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;     
+    } 
+
+    .town-article { 
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .town-img {
+        width: 35%;
+    }
 
 
-main h1 {
-    color: #66310A;
-    padding: .25rem;
-    margin: 0;
-}
-
-#home-article {
-    display: flex;
-    flex-direction: column;     
-} 
-
-#home-article { 
-    font-family: 'Roboto', sans-serif;
-}
-
-#home-fig {
-    width: 100%;
-}
+    /*----Home Page Article and Image-----*/
 
 
-/*----------- Footer --------------*/
+    main h1 {
+        color: #66310A;
+        padding: .25rem;
+        margin: 0;
+    }
 
-footer {
-    font-size: 1rem;
-    background-color: #1d5c63;
-    padding: .5rem 2%;
-    text-align: center;
-}
-aside { 
-    font-size: .9rem;
-    margin: 0;
-}
+    #home-article {
+        display: flex;
+        flex-direction: column;     
+    } 
 
-aside h4 { margin: 0 0; }
+    #home-article { 
+        font-family: 'Roboto', sans-serif;
+    }
 
-aside p { margin: 0 0; }
-
-footer>p {
-    font-size: .8rem;
-    color:#fff;
-    padding: .25em;
-    margin: 0;
-    background-color: #1d5c63;
-}
+    #home-fig {
+        width: 50%;
+        float: left;
+    }
 
 
+    /*----------- Footer --------------*/
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    footer {
+        font-size: 1rem;
+        background-color: #1d5c63;
+        padding: .5rem 2%;
+        text-align: center;
+    }
+    aside { 
+        font-size: .9rem;
+        margin: 0;
+    }
+
+    aside h4 { margin: 0 0; }
+
+    aside p { margin: 0 0; }
+
+    footer>p {
+        font-size: .8rem;
+        color:#fff;
+        padding: .25em;
+        margin: 0;
+        background-color: #1d5c63;
+    }
+
+
+
+    /*----- Clearfix: Force an Element not to collapse -----*/
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }

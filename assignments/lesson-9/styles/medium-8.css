@@ -192,26 +192,27 @@ section.forecast h3 { margin: 0;}
     /*----Home Page Article and Image-----*/
 
 
-main h1 {
-    color: #66310A;
-    padding: .25rem;
-    margin: 0;
+    main h1 {
+        color: #66310A;
+        padding: .25rem;
+        margin: 0;
 }
   
 
-    .home-article {
-    display: flex;
-    flex-direction: row;     
+    #home-article {
+        display: flex;
+        flex-direction: row;     
 } 
     
 
-.home-article { 
-    font-family: 'Roboto', sans-serif;
+    #home-article { 
+        margin: 2px 2px 2px 2px;
+        font-family: 'Roboto', sans-serif;
 }
 
-.home-fig {
-    width: 50%;
-    float: left;
+    #home-fig {
+        width: 50%;
+        float: left;
 }
 
 /*----------- FOOTER --------------*/
@@ -240,6 +241,11 @@ nav ul.hide {display: none;}
         display: none;
     }   
    
+    
+    #home-fig {
+        width: 50%;
+        float: left;
+}
     
     
     
