@@ -221,6 +221,13 @@ section.forecast h3 { margin: 0;}
 }
     main figure.home-fig img { width: 100%}
     
+    
+      section article {
+        display: flex;
+        flex-direction: row;
+        width: 33%;
+    }
+    
 /*----Home Page section Town Stats and Image-----*/
 
     

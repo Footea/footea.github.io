@@ -382,29 +382,27 @@ section picture img { display: block; width: 20%;
 
     main figure.home-fig img { width: 100%}
 
- /*----Home Page Sections Image-----*/
+/* Home Page section styles */
 
-
-   
+section article {
+  width: 33%;
+  float: left;
 }
-    section article {
-      width: 33;
-      float: left; 
-    }
 
-    section p {
-      margin: 5px 0;
-    }
+section p {
+    font-size: .80rem;
+    margin: 5px 0; 
+}
 
-    section ul {
-      margin-top: 0;
-      color: black;
-    }
+section ul {
+    font-size: .80rem;
+    margin-top: 0;
+}
 
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
+h2 {
+  font-size: 1.5rem; 
+  margin-bottom: 10px;  
+}
 
     /*----------- Footer --------------*/
 
