@@ -136,6 +136,7 @@ section picture img { display: block; width: 20%;
 }
 
 /*----------- MAIN GALLERY --------------*/
+
 /*----------- Storm Center Form --------------*/
  /*-----COLUMNS -----*/
     #form-flex {
@@ -356,21 +357,54 @@ section picture img { display: block; width: 20%;
         padding: .25rem;
         margin: 0;
     }
+    main article.home-art {
+    display: flex;
+    flex-direction: column;
+}
+     
 
     #home-article {
-        display: flex;
-        flex-direction: column;     
-    } 
+        width: 50%;
+        margin: 0 0 0 2%;      
+} 
+    
 
     #home-article { 
+        
         font-family: 'Roboto', sans-serif;
+}
+
+    main figure.home-fig {
+        width: 75%;
+        margin: 0 0 0 2%;
+        float: left;       
+}
+
+    main figure.home-fig img { width: 100%}
+
+ /*----Home Page Sections Image-----*/
+
+
+   
+}
+    section article {
+      width: 33;
+      float: left; 
     }
 
-    #home-fig {
-        width: 50%;
-        float: left;
+    section p {
+      margin: 5px 0;
     }
 
+    section ul {
+      margin-top: 0;
+      color: black;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
 
     /*----------- Footer --------------*/
 

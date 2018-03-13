@@ -43,6 +43,11 @@ nav ul.hide {display: none;}
   
 /*----------- Storm Center Form --------------*/
 /*-------COLUMNS -------*/
+    section h2.title {
+        
+        margin: 0 0 0 10%;
+    }
+    
     #form-flex {
         display: flex;
         flex-direction: row;
@@ -53,15 +58,19 @@ nav ul.hide {display: none;}
         }
 
     #form-flex > .left {
+        text-align: center;
         flex: auto;
         width: 50%;	
     }
     #form-flex > .right {
         display: none;
-        border: 1px solid red;
-        text-align: center;
         width: 30%;
-    } 
+        margin: 0 0 0 2%;
+        text-align: center;
+        font-style: italic;
+    }  
+    
+    #form-flex > .right img { width: 100%}
     
     
     
@@ -208,9 +217,7 @@ nav ul.hide {display: none;}
     
    
 /*----------- MAIN --------------*/
- #form-flex > .right {
-        display: none;
-    }   
+  
    
     
     

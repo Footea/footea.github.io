@@ -128,8 +128,13 @@ section picture img { display: block; width: 20%;
 }
 
 /*----------- MAIN GALLERY --------------*/
+
 /*----------- Storm Center Form --------------*/
  /*-----COLUMNS -----*/
+   
+   section h2.title { 
+        margin: 0 0 0 3%;
+    }
     #form-flex {
         display: flex;
         flex-direction: row;
@@ -144,10 +149,15 @@ section picture img { display: block; width: 20%;
         width: 50%;	
     }
     #form-flex > .right {
-        border: 1px solid red;
+        display: none;
         text-align: center;
         width: 30%;
-    }
+        margin: 0 0 0 2%;
+        float: right;
+        
+    }  
+    
+    #form-flex > .right img { width: 100%}
 
 form#conference {
     margin: 1em 3%;

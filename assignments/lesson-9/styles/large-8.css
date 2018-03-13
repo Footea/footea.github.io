@@ -257,27 +257,34 @@ nav button { display: none;}
     margin: 0;
 }
   
+    main article.home-art {
+    display: flex;
+    flex-direction: row;
+}
+     
 
     #home-article {
-    display: flex;
-    flex-direction: row;     
+        width: 50%;
+        margin: 0 0 0 2%;   
 } 
     
 
     #home-article { 
-    
-    font-family: 'Roboto', sans-serif;
+        
+        font-family: 'Roboto', sans-serif;
 }
 
-    #home-fig {
-    width: 40%;
-    float: left;
-    overflow: hidden;
+    main figure.home-fig {
+        width: 50;
+        margin: 0 0 0 2%;
+        float: left;
+        
 }
+    main figure.home-fig img { width: 100%}
 
     
     
- }   
+ 
     
 
 

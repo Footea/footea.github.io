@@ -48,20 +48,20 @@ nav ul.hide {display: none;}
         flex-direction: row;
         width: 95%;
         margin: auto;
-        font-family: "Modini MT", sans-serif;
-
-        }
+       font-family: "Modini MT", sans-serif;
+}
 
     #form-flex > .left {
         flex: auto;
         width: 50%;	
-    }
+}
     #form-flex > .right {
         display: none;
-        border: 1px solid red;
+        
         text-align: center;
         width: 30%;
-    } 
+} 
+    
     
     
     
@@ -197,23 +197,37 @@ section.forecast h3 { margin: 0;}
         padding: .25rem;
         margin: 0;
 }
-  
+    main article.home-art {
+    display: flex;
+    flex-direction: row;
+}
+     
 
     #home-article {
-        display: flex;
-        flex-direction: row;     
+        width: 50%;
+        margin: 0 0 0 2%;  
 } 
     
 
     #home-article { 
-        margin: 2px 2px 2px 2px;
+        
         font-family: 'Roboto', sans-serif;
 }
 
-    #home-fig {
+    main figure.home-fig {
         width: 50%;
+        margin: 0 0 0 2%;
         float: left;
 }
+    main figure.home-fig img { width: 100%}
+    
+/*----Home Page section Town Stats and Image-----*/
+
+    
+    
+    
+    
+    
 
 /*----------- FOOTER --------------*/
     
