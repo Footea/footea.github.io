@@ -253,13 +253,14 @@ nav button { display: none;}
 
     main h1 {
     color: #66310A;
-    padding: .25rem;
+    padding: 1rem;
     margin: 0;
 }
   
     main article.home-art {
     display: flex;
     flex-direction: row;
+    padding: 1rem;
 }
      
 
@@ -275,7 +276,7 @@ nav button { display: none;}
 }
 
     main figure.home-fig {
-        width: 50;
+        width: 45%;
         margin: 0 0 0 2%;
         float: left;
         

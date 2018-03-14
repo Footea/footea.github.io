@@ -194,17 +194,18 @@ section.forecast h3 { margin: 0;}
 
     main h1 {
         color: #66310A;
-        padding: .25rem;
+        padding: 1rem;
         margin: 0;
 }
     main article.home-art {
     display: flex;
     flex-direction: row;
+    padding: 1rem;
 }
      
 
     #home-article {
-        width: 50%;
+        width: 45%;
         margin: 0 0 0 2%;  
 } 
     
@@ -267,7 +268,14 @@ nav ul.hide {display: none;}
         width: 50%;
         float: left;
 }
-    
+   
+        main figure.home-fig {
+        width: 100%;
+        margin: 0 0 0 2%;
+        float: left;       
+}
+
+    main figure.home-fig img { width: 100%}
     
     
 

@@ -265,6 +265,8 @@ section picture img { display: block; width: 20%;
     .gallery-image img {
         border-radius: 10px 15px;
         opacity: .60;
+        width: 250px;
+        height: 145px;
     }
 
 
@@ -354,7 +356,7 @@ section picture img { display: block; width: 20%;
 
     main h1 {
         color: #66310A;
-        padding: .25rem;
+        padding: .5rem;
         margin: 0;
     }
     main article.home-art {
@@ -374,15 +376,10 @@ section picture img { display: block; width: 20%;
         font-family: 'Roboto', sans-serif;
 }
 
-    main figure.home-fig {
-        width: 75%;
-        margin: 0 0 0 2%;
-        float: left;       
-}
 
-    main figure.home-fig img { width: 100%}
 
 /* Home Page section styles */
+
 
 section article {
   width: 33%;
@@ -407,26 +404,21 @@ h2 {
     /*----------- Footer --------------*/
 
     footer {
-        font-size: 1rem;
-        background-color: #1d5c63;
-        padding: .5rem 2%;
+        font-size: .8rem;
+        background-color: #45A5AF;
         text-align: center;
     }
-    aside { 
-        font-size: .9rem;
-        margin: 0;
-    }
+    aside { padding: .5rem 3rem;}
 
-    aside h4 { margin: 0 0; }
+    aside h4 { margin: 0 0; padding: .2rem;}
 
-    aside p { margin: 0 0; }
+    aside p { margin: 0 0;}
 
     footer>p {
-        font-size: .8rem;
         color:#fff;
-        padding: .25em;
+        padding: .45rem;
         margin: 0;
-        background-color: #1d5c63;
+        background-color: #1D5C63;
     }
 
 

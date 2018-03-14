@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
+  <title>Weather Watcher Home Page</title>
   <meta name="author" content="Aaron Foote">
   <meta name="description" content="Weather Watcher Home Page">
   <!-- external style references in the proper cascading order -->    
@@ -42,7 +42,10 @@
         <h1>Weather Conditions to get worse</h1>
         <article class="home-art"> 
             <figure class="home-fig">
-            <img src="images/smokymtns525-350.jpg">
+            <img src="images/smokymtns324-199.jpg"
+                 srcset="images/smokymtns380-200.jpg 300w,
+                     images/smokymtns200-133.jpg 100w
+                    "> 
                        
             </figure>
             <p id="home-article">Sed dapibus augue sit amet efficitur posuere. Nunc libero neque, dapibus at sem et, maximus facilisis dolor. Nullam molestie metus et nunc iaculis vehicula. Curabitur ut scelerisque mi, at imperdiet libero. Vestibulum nec magna fermentum, pellentesque mi vitae, hendrerit tortor. Suspendisse eget tempus dolor, non viverra metus. Proin vehicula fermentum leo et feugiat. Nam non felis nisl.</p>
@@ -72,7 +75,7 @@
                 contact@weatherwatcher.com
             </p>
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved &bull; Weather Watcher &bull; <span id="currentdate"></span>
+        <p class="footer-bar">&copy;&nbsp; 2018 All Rights Reserved &nbsp;&bull;&nbsp;  Weather Watcher &nbsp;&bull;&nbsp; <span id="currentdate"></span>
         </p>
     </footer>
     <script src="scripts/hamburger.js"></script>
