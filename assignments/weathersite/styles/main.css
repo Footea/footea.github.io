@@ -1,0 +1,431 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+* { box-sizing: border-box;}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: "Modini MT", sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: 1.5% 2%;
+    color: #fff;
+    background-color: #135E66;
+}
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+header img {
+    float: left;
+    margin: 0 2% 0 0;
+}
+header .subheading {
+    font-size: .90rem;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+nav button {
+    margin: 0 2%;
+    background-color: white;
+    border: 1px solid;
+    border-color: black;
+    font-size: 1.6rem;
+    color: saddlebrown;
+    
+}
+
+nav {
+margin: 0;
+background: #935800;
+
+
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0em;
+	padding: 0em;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+    background: #935800;
+    font-family: "Bodoni MT", sans-serif;
+}
+
+nav ul li {
+    flex: 1 100%;
+    border-bottom:1px solid #fff;
+}
+
+nav ul li a {
+    display:block;
+	color: rgba(255, 255, 255, 80);
+	text-align: center;
+	padding: .50em;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+
+nav ul li:first-child a {}
+
+
+
+nav ul li.active a {background-color: rgba(0,0,0,0.2); color: black;}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+
+
+
+
+
+
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 0 0 0;
+    font-family: "Modini MT", sans-serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #66310A;
+    margin: 0 0 0 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: black;
+    
+}
+main figure { margin: 0; width: 100%;}
+
+main figure img { margin: 0; width: 100%;}
+
+
+section h3 { margin: 0; }
+
+section.current { 
+    border: solid 1px;
+    display: inline-block; }
+
+section picture img { display: block; width: 20%;
+}
+
+/*----------- MAIN GALLERY --------------*/
+
+/*----------- Storm Center Form --------------*/
+ /*-----COLUMNS -----*/
+    #form-flex {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+        font-family: "Modini MT", sans-serif;
+
+        }
+
+    #form-flex > .left {
+        flex: auto;
+        width: 50%;	
+    }
+    #form-flex > .right {
+        border: 1px solid red;
+        text-align: center;
+        width: 30%;
+    }
+
+    form#conference {
+        margin: 1em 3%;
+
+    }
+
+    fieldset {
+        background-color: whitesmoke;
+        border-radius: .8em;
+        margin:  1.5rem;
+        border: 1px solid #917a56;
+
+    }
+    legend {
+        color: white;
+        margin-left: 6%;
+        padding: .5rem;
+        border: 1px solid #917a56;
+        background-color: #135E66;
+        border-radius: .4em;
+    }
+
+    label {
+        display: block;
+        margin: .5em;
+    }
+
+    label span {
+        display: block;
+        font-size: .8em;
+        color:  #917a56;
+        padding-top: .9em;
+        padding-bottom: .2em;
+    }
+
+
+/*-----buttons -----*/
+    input.submitBtn {
+       
+        color: #fff;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: .5em;
+        font-size: 1em;
+        padding: .6em;
+        background: green;
+        box-shadow: 4px 4px 10px #666;
+
+
+
+    }
+
+    input.resetBtn {
+        
+        color: black;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: white;
+        box-shadow: 4px 4px 10px #666;
+
+    }
+
+
+
+
+/*--------Thank You Page ----------*/   
+    main.thanks {
+        width:90%;
+        margin: auto;
+        
+    }
+    
+    h1.thanks-title {
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+                
+    }
+    
+    article.thanks-page {
+        
+        text-align: center;
+        
+    }
+
+
+/*------Gallery Grid----------*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem; 
+    }
+
+    .gallery-image img {
+        width: 13rem;
+        margin: 0;
+    }
+
+    /* rounded corners - boxmodel */
+    .gallery-image img {
+        border-radius: 10px 15px;
+        opacity: .60;
+        width: 250px;
+        height: 145px;
+    }
+
+
+    /* simple opacity */
+    .opac {opacity: .5;}
+
+
+    /* hover effect - not anchor tags around images */
+    .gallery-image img:hover {box-shadow: 5px 5px 10px gray;}
+
+
+    figcaption {}
+
+
+    /*---- Weather Summary Flex ----------*/   
+
+    .img weathericon {
+
+        align-content: center;
+    }
+
+    #summary { 
+        display: flex;
+        flex-direction: column; 
+        border: 2px solid black;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #summary > .highlow {
+
+        text-align: center;
+        flex: auto;       
+    }
+
+    #summary > .current {
+
+        flex: auto;
+        text-align: center;
+        padding: 10px
+    }
+
+    #summary > .conditions {
+
+        flex: auto;
+        padding: 10px;        
+    } 
+
+    #summary > .windchill {
+
+        flex: auto;
+        padding: 10px 10px;   
+    }
+
+
+
+
+
+
+
+    /*----Town Article and Image-----*/
+
+
+    article h3 {
+        color: #66310A;
+        padding: .25rem;
+        margin: 0;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;     
+    } 
+
+    .town-article { 
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .town-img {
+        width: 35%;
+    }
+
+
+    /*----Home Page Article and Image-----*/
+
+
+    main h1 {
+        color: #66310A;
+        padding: .5rem;
+        margin: 0;
+    }
+    main article.home-art {
+    display: flex;
+    flex-direction: column;
+}
+     
+
+    #home-article {
+        width: 50%;
+        margin: 0 0 0 2%;      
+} 
+    
+
+    #home-article { 
+        
+        font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Home Page section styles */
+
+
+section article {
+  width: 33%;
+  float: left;
+}
+
+section p {
+    font-size: .80rem;
+    margin: 5px 0; 
+}
+
+section ul {
+    font-size: .80rem;
+    margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem; 
+  margin-bottom: 10px;  
+}
+
+    /*----------- Footer --------------*/
+
+    footer {
+        font-size: .8rem;
+        background-color: #45A5AF;
+        text-align: center;
+    }
+    aside { padding: .5rem 3rem;}
+
+    aside h4 { margin: 0 0; padding: .2rem;}
+
+    aside p { margin: 0 0;}
+
+    footer>p {
+        color:#fff;
+        padding: .45rem;
+        margin: 0;
+        background-color: #1D5C63;
+    }
+
+
+
+    /*----- Clearfix: Force an Element not to collapse -----*/
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }

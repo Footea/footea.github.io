@@ -1,0 +1,286 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 560px) and (max-width:807px){
+ 
+   
+
+/*----------- BODY --------------*/
+    
+/*-Flex Layout----*/
+.article {
+    display: flex;
+    flex-direction: row;
+} 
+.town-article { 
+    width: 50%;
+    margin: 1rem;
+}
+
+ .town-img {
+    width: 75%; 
+}
+    
+
+
+
+/*----------- HEADER --------------*/
+    
+header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    max-width: 1120px;
+    margin: auto;
+    
+ }
+/*----------- NAVIGATION --------------*/
+nav ul { flex-direction: column;}
+    nav button { 
+    display: flex; 
+    flex: auto;
+    }
+nav ul.hide {display: none;}
+
+
+    
+
+  
+/*----------- Storm Center Form --------------*/
+/*-------COLUMNS -------*/
+    #form-flex {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin: auto;
+       font-family: "Modini MT", sans-serif;
+}
+
+    #form-flex > .left {
+        flex: auto;
+        width: 50%;	
+}
+    #form-flex > .right {
+        display: none;
+        
+        text-align: center;
+        width: 30%;
+} 
+    
+    
+    
+    
+   
+  
+/*---------- Form Submit Buttons ----------*/
+    input.submitBtn {
+        
+        color: #fff;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: .5em;
+        font-size: 1em;
+        padding: .6em;
+        background: green;
+        box-shadow: 4px 4px 10px #666;
+
+    }
+
+    input.resetBtn {
+        
+        color: black;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 70%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: white;
+        box-shadow: 4px 4px 10px #666;
+
+    }
+    
+    
+/*---- Gallery Grid ----------*/    
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}  
+    
+/*---- Town Page Weather Summary Flex ----------*/      
+    
+#summary { 
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+    
+#summary > .highlow {
+    border: 1px solid black;
+    padding: 10px;
+    flex: auto;       
+}
+
+#summary > .current {
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 10px
+}
+    
+#summary > .conditions {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px;        
+} 
+    
+#summary > .windchill {
+    border: 1px solid black;
+    flex: auto;
+    padding: 10px 10px;   
+}
+    
+    
+    
+    
+/*----Town Page Forecast Table ----------*/        
+    
+main section.forecast {
+    padding: 5px 50px 5px 50px;
+    
+    margin: 0;
+    text-align: center;
+    background: #B28869;
+}
+    
+table.forecast { border-collapse: collapse; width: 100%; }
+    
+table, th, td {
+    background-color: #fff;
+    padding: 3px;    
+    border: 2px solid;
+}
+
+section.forecast h3 { margin: 0;}
+    
+    
+/*--------Thank You Page ----------*/   
+    main.thanks {
+        width:90%;
+        margin: auto;
+        
+        
+    }
+    
+    h1.thanks-title {
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+                
+    }
+    
+    article.thanks-page {
+        
+        text-align: center;
+        
+        
+    }
+    
+    
+    
+    
+    /*----Home Page Article and Image-----*/
+
+
+    main h1 {
+        color: #66310A;
+        padding: 1rem;
+        margin: 0;
+}
+    main article.home-art {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+     
+
+    #home-article {
+        width: 45%;
+        margin: 0 0 0 2%;  
+} 
+    
+
+    #home-article { 
+        
+        font-family: 'Roboto', sans-serif;
+}
+
+    main figure.home-fig {
+        width: 50%;
+        margin: 0 0 0 2%;
+        float: left;
+}
+    main figure.home-fig img { width: 100%}
+    
+    
+      section article {
+        display: flex;
+        flex-direction: row;
+        width: 33%;
+    }
+    
+/*----Home Page section Town Stats and Image-----*/
+
+    
+    
+    
+    
+    
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
+
+
+@media only screen and (max-width: 559px) {
+    
+/*----------- BODY --------------*/
+section.forecast { display: none; }
+nav ul.hide {display: none;}
+    
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+ 
+    
+   
+/*----------- MAIN --------------*/
+ #form-flex > .right {
+        display: none;
+    }   
+   
+    
+    #home-fig {
+        width: 50%;
+        float: left;
+}
+   
+        main figure.home-fig {
+        width: 100%;
+        margin: 0 0 0 2%;
+        float: left;       
+}
+
+    main figure.home-fig img { width: 100%}
+    
+    
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

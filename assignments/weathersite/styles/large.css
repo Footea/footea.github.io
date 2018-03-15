@@ -1,0 +1,303 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 807px) {
+
+    
+
+
+
+
+
+/*----------- HEADER --------------*/
+ /* the comma means apply the following CSS declarations to all of the listed elements */
+header, nav, main, section, footer {
+   
+    max-width: 67rem;
+    margin: auto;
+    
+    }
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+
+/* 64em is also 1028px */
+@media only screen and (min-width: 807px){
+
+    
+
+/*----------- BODY --------------*/
+    
+ 
+    
+    
+.article {
+    display: flex;
+    flex-direction: row;
+} 
+.town-article { 
+    width: 50%;
+    margin: 1rem;
+}
+
+ .town-img {
+    width: 50%; 
+}
+
+
+/*----------- HEADER --------------*/
+header, nav, main, section, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    
+    margin: auto;
+    
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+nav ul { flex-direction: row;}
+nav button { display: none;}
+
+    
+    
+/*----------- Gallery Page Grid --------------*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin:auto;
+   } 
+    
+/*--------Thank You Page ----------*/  
+    
+    main.thanks {
+        width:90%;
+        margin: auto;
+        
+    }
+    
+    h1.thanks-title {
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+                
+    }
+    
+    article.thanks-page {
+        
+        text-align: center;
+        
+    }    
+/*----------- Storm Center Form --------------*/
+    
+ /*-----COLUMNS -----*/
+    #form-flex {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        font-family: "Modini MT", sans-serif;
+
+        }
+
+    #form-flex > .left {
+        flex: auto;
+        width: 50%;	
+    }
+    #form-flex > .right {
+       
+        text-align: center;
+        width: 30%;
+    }  
+    
+
+
+    /*-----buttons -----*/
+    input.submitBtn {
+        
+        color: #fff;
+        border: 1px solid black;
+        border-radius: 7px;
+        width: 20%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: green;
+        box-shadow: 4px 4px 10px #666;
+
+
+
+    }
+
+    input.resetBtn {
+        
+        color: black;
+        border: 1px solid black;
+        border-radius: 7px;
+        width: 20%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: white;
+        box-shadow: 4px 4px 10px #666;
+
+    }
+
+
+    /*-----------Town Page Weather Summary Flex--------------*/    
+
+    #summary { 
+        display: flex;
+        flex-direction: row; 
+        border: 1px solid black;
+        max-width: 960px;
+        padding: 0;
+        margin: Auto;
+    }
+
+    #summary > .highlow {
+        border: 1px solid black;
+        padding: 10px;
+        flex: auto;       
+    }
+
+    #summary > .current {
+        border: 1px solid black;
+        flex: auto;
+        padding: 10px
+    }
+
+    #summary > .conditions {
+        border: 1px solid black;
+        flex: auto;
+        padding: 10px;        
+    } 
+
+    #summary > .windchill {
+        border: 1px solid black;
+        flex: auto;
+        padding: 10px 10px;   
+    }    
+
+    
+    
+    
+    main section.forecast {
+    padding: 5px 50px 5px 50px;
+    
+    margin: 0;
+    text-align: center;
+    background: #B28869;
+     
+}
+    
+/*----------Town Page Forecast Table --------------*/
+    
+    table.forecast { border-collapse: collapse; width: 100%; }
+
+    table, th, td {
+        background-color: #fff;
+        padding: 3px;    
+        border: 2px solid;
+    }
+
+    section.forecast h3 { margin: 0;}
+
+    /*----------- FOOTER --------------*/
+
+     /* end of media query */
+
+    /*----------- NAVIGATION --------------*/
+
+    nav ul { flex-direction: row;}
+    nav button { display: none;}
+
+  /*----Home Page secion JSON -----*/ 
+
+   
+    #hpage article {
+        ;
+        width: 20%;
+        float: left;
+        margin-bottom: 0;
+        
+    }
+
+    #hpage p {
+        font-size: 14px;
+        margin: 5px 0;
+        color: black; 
+        font-weight: normal;  
+    }
+    #hpage p:nth-child(3){
+        font-style: italic;
+    }
+    
+     #hpage p:nth-child(2){
+        text-align: center; 
+        font-style: italic;
+    }
+
+    #hpage ul {
+        font-size: 12px;
+        margin-top: 10px;
+        color: black;
+    }
+
+    #hpage h2 {
+        font-size: 1.5rem;
+        letter-spacing: -2px;
+        margin-bottom: 10px;
+        
+    }
+    
+        /*----Home Page Article and Image-----*/
+
+
+    main h1 {
+    color: #66310A;
+    padding: 1rem;
+    margin: 0;
+}
+  
+    main article.home-art {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+     
+
+    #home-article {
+        width: 50%;
+        margin: 0 0 0 2%;   
+} 
+    
+
+    #home-article { 
+        
+        font-family: 'Roboto', sans-serif;
+}
+
+    main figure.home-fig {
+        width: 45%;
+        margin: 0 0 0 2%;
+        float: left;
+        
+}
+    main figure.home-fig img { width: 100%}
+
+    
+    
+ 
+    
+
+
+    /*----------- MAIN --------------*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin:auto;
+       } 
+
+    /*----------- FOOTER --------------*/
+
+    } /* end of media query */

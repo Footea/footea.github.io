@@ -1,0 +1,57 @@
+/* || general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: red;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: blue;
+  font-family: 'Rammetto One', cursive;  
+}
+
+/* Home Page section styles */
+
+section article {
+  width: 33%;
+  float: left;
+  color: slategrey;
+  font-family: 'Permanent Marker', cursive;  
+}
+
+section p {
+  margin: 5px 0;
+  color: darkgreen; 
+  font-weight: bold;  
+}
+
+section ul {
+  margin-top: 0;
+  color: black;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+  color: slategrey;  
+}
