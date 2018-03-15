@@ -27,7 +27,7 @@ request.onload = function() {
         city.textContent = cities[i].name;  
         year.textContent = 'Established: ' + cities[i].yearFounded;
         motto.textContent = '"' + cities[i].motto + '"';
-        population.textContent ='Pop: ' + cities[i].currentPopulation;
+        population.textContent ='Population: ' + cities[i].currentPopulation;
         avgrain.textContent = 'Average Rainfall: ' + cities[i].averageRainfall + '"';
         
         
