@@ -158,16 +158,13 @@ section picture img { display: block; width: 20%;
         width: 30%;
     }
 
-    form#conference {
-        margin: 1em 3%;
-
-    }
-
+    
     fieldset {
-        background-color: whitesmoke;
+        background-color: #eee7d8;
+        color: -50%;
         border-radius: .8em;
         margin:  1.5rem;
-        border: 1px solid #917a56;
+        border: 1px solid #1D5C63;
 
     }
     legend {
@@ -175,19 +172,20 @@ section picture img { display: block; width: 20%;
         margin-left: 6%;
         padding: .5rem;
         border: 1px solid #917a56;
-        background-color: #135E66;
+        background-color: #1D5C63;
         border-radius: .4em;
     }
 
     label {
         display: block;
+        padding: .5rem;
         margin: .5em;
     }
 
     label span {
         display: block;
         font-size: .8em;
-        color:  #917a56;
+        color:  #000;
         padding-top: .9em;
         padding-bottom: .2em;
     }
@@ -347,7 +345,7 @@ section picture img { display: block; width: 20%;
     }
 
     .town-img {
-        width: 35%;
+        width: 100%;
     }
 
 
@@ -381,25 +379,47 @@ section picture img { display: block; width: 20%;
 /* Home Page section styles */
 
 
-section article {
-  width: 33%;
-  float: left;
-}
+    #town-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 25px;
+        max-width: 67rem;
+        margin: auto;
+      
+    }
 
-section p {
-    font-size: .80rem;
-    margin: 5px 0; 
-}
+    #town-stats article {
+    border: 2px solid #1D5C63;
+    border-radius: 5px;
+    background-color: #ffff;
+    padding: 1em;
+    }
 
-section ul {
-    font-size: .80rem;
-    margin-top: 0;
-}
+    section p {
+        font-size: .85rem;
+        margin: 5px 0; 
+    }
+ section p:nth-child(2) {
+        font-style: italic;
+        text-align: center;
+        font-weight: 500;
+        font-size: .90rem;
+        margin: 5px 0; 
+    }
+        font-size: .80rem;
+        margin: 5px 0; 
+    }
 
-h2 {
-  font-size: 1.5rem; 
-  margin-bottom: 10px;  
-}
+    section ul > li {
+        font-size: .80rem;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;  
+    }
 
     /*----------- Footer --------------*/
 
