@@ -151,6 +151,7 @@ section picture img { display: block; width: 20%;
     #form-flex > .left {
         flex: auto;
         width: 50%;	
+        margin: auto;
     }
     #form-flex > .right {
         display: grid;
@@ -169,32 +170,35 @@ section picture img { display: block; width: 20%;
         background-color: #eee7d8;
         color: -50%;
         border-radius: .8em;
-        margin:  1.5rem;
-        border: 1px solid #1D5C63;
+        margin:  1.5rem 0;
+        border: 2px solid #1D5C63;
 
     }
     legend {
         color: white;
-        margin-left: 6%;
+        margin-left: 8%;
         padding: .5rem;
-        border: 1px solid #917a56;
+        border: 2px solid #917a56;
         background-color: #1D5C63;
         border-radius: .4em;
     }
 
     label {
         display: block;
-        padding: .5rem;
-        margin: .5em;
+        padding: 0 1rem;
+        
     }
 
     label span {
         display: block;
-        font-size: .8em;
+        font-size: .95em;
         color:  #000;
-        padding-top: .9em;
-        padding-bottom: .2em;
+        padding-top: .3em;
+        padding-bottom: .4em;
     }
+    #form-flex > .right {
+        
+}
 
 
 /*-----buttons -----*/
