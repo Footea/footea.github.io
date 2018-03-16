@@ -264,11 +264,15 @@
     main figure.home-fig img { width: 100%}
 
     
-    #town-stats {
-        grid-auto-rows: 1fr 1fr 1fr;
+      #town-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 25px;
+        max-width: 67rem;
+        margin: auto;
       
     }
- 
     
 
 

@@ -397,7 +397,7 @@
 
 
     #town-stats {
-        display: grid;
+      /*  display: grid;*/
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(200px, auto);
         grid-gap: 25px;
@@ -411,7 +411,7 @@
     border-radius: 5px;
     background-color: #ffff;
     padding: 0 .5rem ;
-        margin: 1.5rem 0;
+    margin: 1.5rem 0;
     }
 
     section p {
