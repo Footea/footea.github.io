@@ -2,90 +2,90 @@
 * { box-sizing: border-box;}
 
 
-/*----------- BODY --------------*/
-body {
-    font-size: 16px;
-    font-family: "Modini MT", sans-serif;
-}
+    /*----------- BODY --------------*/
+    body {
+        font-size: 16px;
+        font-family: "Modini MT", sans-serif;
+    }
 
 
-/*----------- HEADER --------------*/
-header {
-    padding: 1.5% 2%;
-    color: #fff;
-    background-color: #135E66;
-}
-header h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 0 0 0 0;
-}
+    /*----------- HEADER --------------*/
+    header {
+        padding: 1.5% 2%;
+        color: #fff;
+        background-color: #135E66;
+    }
+    header h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
 
-header img {
-    float: left;
-    margin: 0 2% 0 0;
-}
-header .subheading {
-    font-size: .90rem;
-    text-align: center;
-    margin: 0 0 0 0;
-    padding-bottom: 1rem;
-    
-}
+    header img {
+        float: left;
+        margin: 0 2% 0 0;
+    }
+    header .subheading {
+        font-size: .90rem;
+        text-align: center;
+        margin: 0 0 0 0;
+        padding-bottom: 1rem;
+
+    }
 
 
 
 /*----------- NAVIGATION --------------*/
 
 
-nav button {
-    margin: 0 2%;
-    background-color: white;
-    border: 1px solid;
-    border-color: black;
-    font-size: 1.6rem;
-    color: saddlebrown;
-    
-}
+    nav button {
+        margin: 0 2%;
+        background-color: #fff;
+        border: 1px solid;
+        border-color: #000;
+        font-size: 1.6rem;
+        color: #000;
 
-nav {
-margin: 0;
-background: #935800;
+    }
 
-
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0em;
-	padding: 0em;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-    background: #935800;
-    font-family: "Bodoni MT", sans-serif;
-}
-
-nav ul li {
-    flex: 1 100%;
-    border-bottom:1px solid #fff;
-}
-
-nav ul li a {
-    display:block;
-	color: rgba(255, 255, 255, 80);
-	text-align: center;
-	padding: .50em;
-	text-decoration: none;
-	font-size: 1.25rem;
-}
-
-nav ul li:first-child a {}
+    nav {
+    margin: 0;
+    background: #45A5AF;
 
 
+    }
 
-nav ul li.active a {background-color: rgba(0,0,0,0.2); color: black;}
-nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+    nav ul {
+        list-style-type: none;
+        margin: 0em;
+        padding: 0em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: #45A5AF;
+        font-family: "Bodoni MT", sans-serif;
+    }
+
+    nav ul li {
+        flex: 1 100%;
+        border-bottom:1px solid #fff;
+    }
+
+    nav ul li a {
+        display:block;
+        color: rgba(255, 255, 255, 80);
+        text-align: center;
+        padding: .50em;
+        text-decoration: none;
+        font-size: 1.25rem;
+    }
+
+    nav ul li:first-child a {}
+
+
+
+    nav ul li.active a {background-color: #fff; color: #000;}
+    nav ul li a:hover {background-color: rgba(0,0,0,1); color: #fff;}
 
 
 
@@ -96,49 +96,54 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 
 /*----------- MAIN --------------*/
-main {
-    padding: 0 2%;
-    min-height: 10rem;
-}
+    main {
+        padding: 0 2%;
+        min-height: 10rem;
+    }
 
-h1 {
-    font-size: 1.6rem;
-    text-align: center;
-    margin: 0 0 0 0;
-    font-family: "Modini MT", sans-serif;
-}
+    h1 {
+        font-size: 2rem;
+        text-align: center;
 
-h2 {
-    font-size: 1.6rem;
-    text-align: center;
-    color: #66310A;
-    margin: 0 0 0 0;
-}
+        margin: 0 0 0 0;
+        font-family: "Bodoni MT", sans-serif;
+    }
 
-h3 {
-    font-size: 1.25rem;
-    text-align: center;
-    color: black;
-    
-}
-main figure { margin: 0; width: 100%;}
+    h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        color: #66310A;
+        margin: 0 0 0 0;
+    }
 
-main figure img { margin: 0; width: 100%;}
+    h3 {
+        font-size: 1.25rem;
+        text-align: center;
+        color: black;
+
+    }
+    main figure { margin: 0; width: 100%;}
+
+    main figure img { margin: 0; width: 100%;}
 
 
-section h3 { margin: 0; }
+    section h3 { margin: 0; }
 
-section.current { 
-    border: solid 1px;
-    display: inline-block; }
+    section.current { 
+        border: solid 1px;
+        display: inline-block; }
 
-section picture img { display: block; width: 20%;
-}
+    section picture img { display: block; width: 20%;
+    }
 
 /*----------- MAIN GALLERY --------------*/
 
 /*----------- Storm Center Form --------------*/
  /*-----COLUMNS -----*/
+    .title {
+        margin: 0 1rem;
+    
+}
     #form-flex {
         display: flex;
         flex-direction: row;
@@ -185,7 +190,7 @@ section picture img { display: block; width: 20%;
 
     label {
         display: block;
-        padding: 0 1rem;
+        padding: 0 2rem 0 1rem;
         
     }
 
@@ -195,6 +200,7 @@ section picture img { display: block; width: 20%;
         color:  #000;
         padding-top: .3em;
         padding-bottom: .4em;
+        padding: .3rem 2rem .4rem 1rem;
     }
     #form-flex > .right {
         
