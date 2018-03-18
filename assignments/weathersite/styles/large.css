@@ -70,23 +70,22 @@
 /*----------- Storm Center Form --------------*/
     
  /*-----COLUMNS -----*/
+   
+    
+    
     #form-flex {
         display: flex;
         flex-direction: row;
         width: 98%;
-        font-family: "Modini MT", sans-serif;
-
+        margin: auto;
+        
         }
 
-    #form-flex > .left {
-        flex: auto;
-        width: 50%;	
-    }
+  
    
        
        
-    
-
+  
 
     /*-----buttons -----*/
     input.submitBtn {
@@ -162,23 +161,30 @@
         padding: 5px 50px 5px 50px;
         margin: 0;
         text-align: center;
-        background: #B28869;
+        
      }
     
 /*----------Town Page Forecast Table --------------*/
     
     table.forecast { 
-        border-collapse: collapse;         
+        border-collapse: collapse; 
+        border-color: #135E66;
         width: 100%; 
     }
 
     table, th, td {
         background-color: #fff;
-        padding: 3px;    
-        border: 2px solid;
+        padding: .3rem;    
+        border: 2px solid #135E66;
+        text-align: center;
     }
 
-    section.forecast h3 { margin: 0;}
+    section.forecast h3 { 
+        margin: auto;
+        padding: 1rem;
+        color: #303030;
+        font-family: "Bodoni MT", sans-serif;
+    }
 
     /*----------- FOOTER --------------*/
 
@@ -231,11 +237,7 @@
         /*----Home Page Article and Image-----*/
 
 
-    main h1 {
-        color: #66310A;
-        padding: 1rem;
-        margin: 0;
-}
+
   
     main article.home-art {
         display: flex;

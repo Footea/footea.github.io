@@ -19,7 +19,8 @@
         font-size: 2rem;
         text-align: center;
         margin: 0 0 0 0;
-         color: #fff;
+        color: #fff;
+        font-family: "Modini MT", sans-serif;
     }
 
     header img {
@@ -102,25 +103,29 @@
         min-height: 10rem;
     }
 
-    h1 {
+   main h1 {
         font-size: 2rem;
         text-align: center;
-        color: #66310A;
-        margin: 0 0 0 0;
+        color: #303030;
+        padding: 1rem;
+        margin: auto;
         font-family: "Bodoni MT", sans-serif;
     }
 
     h2 {
         font-size: 1.6rem;
         text-align: center;
-        color: #66310A;
+        color: #303030;
         margin: 0 0 0 0;
     }
 
     h3 {
-        font-size: 1.25rem;
         text-align: center;
-        color: black;
+        margin: auto;
+        padding: 1rem;
+        color: #303030;
+        font-family: "Bodoni MT", sans-serif;
+        
 
     }
     main figure { margin: 0; width: 100%;}
@@ -142,10 +147,18 @@
 /*----------- Storm Center Form --------------*/
  /*-----COLUMNS -----*/
     .title {
-        margin: 0 1rem;
-        padding: .75rem;
+       margin: 0;
+        text-align: center;
+        font-size: 2rem;
+        color: #303030;
+        padding: 1rem;
+        font-family: "Bodoni MT", sans-serif;
     
 }
+    .left { padding: .5rem 3rem;}
+
+    
+
     #form-flex {
         display: flex;
         flex-direction: row;
@@ -155,15 +168,14 @@
 
         }
 
-    #form-flex > .left {
-        flex: auto;
-        width: 50%;	
+     .left {
         margin: auto;
     }
-    #form-flex > .right {
+     .right {
         display: grid;
         text-align: center;
-        max-width: 30%;
+        padding: 0;
+        max-width: 35%;
         font-family: "Bodoni MT", sans-serif;
     }
     #form-flex > .right img{ 
@@ -346,7 +358,7 @@
     /*----Town Article and Image-----*/
 
 
-    article h3 {
+    section h3 {
         color: #66310A;
         padding: .25rem;
         margin: 0;
@@ -369,11 +381,7 @@
     /*----Home Page Article and Image-----*/
 
 
-    main h1 {
-        color: #66310A;
-        
-        margin: 1rem;
-    }
+  
     main article.home-art {
     display: flex;
     flex-direction: column;
@@ -393,7 +401,7 @@
 
 
 
-/***** Home Page section styles *****/
+/*----- Home Page section styles -----*/
 
 
     #town-stats {

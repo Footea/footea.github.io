@@ -42,6 +42,11 @@
   
 /*----------- Storm Center Form --------------*/
 /*-------COLUMNS -------*/
+    .left { padding: .5rem 3rem;}
+
+    .right { padding: 0;}
+    
+    
     #form-flex {
         display: flex;
         flex-direction: row;
@@ -149,18 +154,28 @@
 
         margin: 0;
         text-align: center;
-        background: #B28869;
-    }
+        font-family: "Modini MT", sans-serif;
+                  }
 
-    table.forecast { border-collapse: collapse; width: 100%; }
+    table.forecast { 
+        border-collapse: collapse; 
+        border-color: #135E66;
+        margin: auto;
+        width: 65%; }
 
     table, th, td {
         background-color: #fff;
         padding: 3px;    
-        border: 2px solid;
+        border: 2px solid #135E66;
+        text-align: center;
     }
 
-    section.forecast h3 { margin: 0;}
+    section.forecast h3 { 
+        margin: auto;
+        padding: 1rem;
+        color: #303030;
+        font-family: "Bodoni MT", sans-serif;
+    }
     
     
 /*--------Thank You Page ----------*/   
@@ -191,11 +206,7 @@
     /*----Home Page Article and Image-----*/
 
 
-    main h1 {
-        color: #66310A;
-        padding: 1rem;
-        margin: 0;
-    }
+  
     main article.home-art {
     display: flex;
     flex-direction: row;
