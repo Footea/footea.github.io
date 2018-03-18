@@ -115,8 +115,10 @@
     h2 {
         font-size: 1.875rem;
         text-align: center;
+        padding: 1rem;
         color: #303030;
-        margin: 0 0 0 0;
+        margin: 0;
+        font-family: "Bodoni MT", serif;
     }
 
     h3 {
@@ -187,9 +189,7 @@
         width: 250px;
         height: 145px;
     }
-.storm-image { padding: 1.25rem 1.25rem;
-    
-}
+    .storm-image { padding: 1.25rem 1.25rem;}
 
     
     fieldset {
@@ -215,17 +215,26 @@
         
     }
 
+    label input {
+        width: 60%;
+        padding: .4rem
+    
+    }
+
     label span {
         display: block;
-        font-size: .95em;
+        font-size: 1rem;
         color:  #000;
-        padding-top: .3em;
-        padding-bottom: .4em;
-        padding: .3rem 2rem .4rem 1rem;
-    }
-    #form-flex > .right {
+        padding-top: .6rem;
+        padding-bottom: .4rem;
         
+    }
+    
+    input[type="textarea"] {
+        width: 70%; 
+        padding: 1rem;
 }
+    #form-flex > .right {}
 
 
 /*-----buttons -----*/
@@ -234,7 +243,7 @@
         color: #fff;
         border: 1px solid #111;
         border-radius: 7px;
-        width: 70%;
+        width: 60%;
         margin: .5em;
         font-size: 1em;
         padding: .6em;
@@ -246,13 +255,13 @@
         color: black;
         border: 1px solid #111;
         border-radius: 7px;
-        width: 70%;
+        width: 35%;
         margin: 10px;
         font-size: 1em;
         padding: 10px;
         background: white;
         box-shadow: 4px 4px 10px #666;
-    }
+        }
 
 
 

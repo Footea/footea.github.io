@@ -72,26 +72,28 @@
    
   
 /*---------- Form Submit Buttons ----------*/
-    input.submitBtn {
+     input.submitBtn {
         
         color: #fff;
-        border: 1px solid #111;
+        border: 1px solid black;
         border-radius: 7px;
-        width: 70%;
-        margin: .5em;
+        width: 50%;
+        margin: 10px;
         font-size: 1em;
-        padding: .6em;
+        padding: 10px;
         background: green;
         box-shadow: 4px 4px 10px #666;
+
+
 
     }
 
     input.resetBtn {
         
         color: black;
-        border: 1px solid #111;
+        border: 1px solid black;
         border-radius: 7px;
-        width: 70%;
+        width: 20%;
         margin: 10px;
         font-size: 1em;
         padding: 10px;
