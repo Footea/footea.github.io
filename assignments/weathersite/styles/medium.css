@@ -52,21 +52,21 @@
         flex-direction: row;
         width: 95%;
         margin: auto;
-       font-family: "Modini MT", sans-serif;
+       font-family: "Modini MT", serif;
     }
 
     #form-flex > .left {
         flex: auto;
         width: 50%;	
     }
-    #form-flex > .right {
+   .right {
         display: none;
         
         text-align: center;
         width: 30%;
     } 
     
-    
+     
     
     
    
@@ -154,7 +154,7 @@
 
         margin: 0;
         text-align: center;
-        font-family: "Modini MT", sans-serif;
+        font-family: "Modini MT", serif;
                   }
 
     table.forecast { 
@@ -174,7 +174,7 @@
         margin: auto;
         padding: 1rem;
         color: #303030;
-        font-family: "Bodoni MT", sans-serif;
+        font-family: "Bodoni MT", serif;
     }
     
     

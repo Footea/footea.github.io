@@ -20,7 +20,7 @@
         text-align: center;
         margin: 0 0 0 0;
         color: #fff;
-        font-family: "Modini MT", sans-serif;
+        font-family: "Modini MT", serif;
     }
 
     header img {
@@ -109,22 +109,23 @@
         color: #303030;
         padding: 1rem;
         margin: auto;
-        font-family: "Bodoni MT", sans-serif;
+        font-family: "Bodoni MT", serif;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.875rem;
         text-align: center;
         color: #303030;
         margin: 0 0 0 0;
     }
 
     h3 {
+        font-size: 1.17rem;
         text-align: center;
         margin: auto;
         padding: 1rem;
         color: #303030;
-        font-family: "Bodoni MT", sans-serif;
+        font-family: "Bodoni MT", serif;
         
 
     }
@@ -152,7 +153,7 @@
         font-size: 2rem;
         color: #303030;
         padding: 1rem;
-        font-family: "Bodoni MT", sans-serif;
+        font-family: "Bodoni MT", serif;
     
 }
     .left { padding: .5rem 3rem;}
@@ -164,19 +165,21 @@
         flex-direction: row;
         width: 95%;
         margin: auto;
-        font-family: "Modini MT", sans-serif;
+        font-family: "Modini MT", serif;
 
         }
 
      .left {
+         flex: auto;
         margin: auto;
+       
     }
      .right {
         display: grid;
         text-align: center;
         padding: 0;
         max-width: 35%;
-        font-family: "Bodoni MT", sans-serif;
+        font-family: "Bodoni MT", serif;
     }
     #form-flex > .right img{ 
         border-radius: 10px 15px;
