@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Mountian Spoke Cycling</title>
+  <meta name="author" content="Aaron Foote">
+  <meta name="description" content="Contact Us form, Store hours and Days open, Location and email.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+	<header>
+        <img class="logo" src="images/MSCLogo3color.png" alt="" width="" height="">
+        <h1>Mountain Spoke Cycling</h1>
+        <div class="subheading"><em>Here to help you ride the world.</em>
+       
+        <p class="hdate"><span id="currentdate"></span></p> 
+        </div>
+    </header>
+    
+    
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Bikes</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Adventures</a></li> 
+            <li><a href="#">Events</a></li> 
+            <li class="active"><a href="contact.html">Contact Us</a></li> 
+        </ul>
+    </nav>
+    
+
+    <main>
+       
+    
+    <section id=flex-bar>
+            <h1 class="title">Contact Us</h1>
+        <h3>Call, email, or submit the form below to ask any questions.</h3>
+        </section>  
+        <section id="form-flex">
+        
+        <aside class="contact">
+            
+
+        <form action="thanks.html" method="post">
+
+
+        <fieldset>
+            
+            
+            <label><span>Full Name:</span><input name="fullname" type="text" pattern="[a-zA-Z]{5,75}" required></label>
+            <label><span>E-mail:</span><input name="email" type="email"></label>  
+            <label><span>Phone Number:</span><input name="phone" type="tel" pattern="[0-9-]{12}" required></label> 
+            <label><span>Subject:</span><input name="subject" type="text" pattern="[a-zA-Z]" ></label> 
+            <label><span>Message:</span></label>
+            <textarea class="textbox" name="message" rows="4" cols="40" maxlength="140"></textarea>
+           
+            
+        </fieldset>
+
+
+      
+
+
+        <input type="submit" value="Contact Us" class="submitBtn">
+        <input type="reset" value="Reset" class="resetBtn">                             
+        </form>
+        </aside>
+
+        <aside class="contact">
+            
+            <p class="contactinfo">Phone:</p>
+            <p>406.234.7847</p>
+            <p class="contactinfo">Email:</p>
+            <p>contactus@mountainspoke.com</p>
+            <p class="contactinfo">Location:</p>
+            <p>3950 Valley Commons Drive
+                <br>
+                Bozeman, MT 59715</p>
+            <p class="contactinfo">Hours of Operation:</p>
+            <p>Tuesday - Saturday  9am to 7pm</p>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611015!2d-111.09290618403685!3d45.672272879103986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522207556286" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </aside>
+      
+    </section>
+       
+    </main>
+    
+  
+  <footer>
+        <aside class='footer'>
+            <h1>Mountain Spoke Cycling</h1>
+            <p>
+                3950 Valley Commons Drive
+                <br>
+                Bozeman, MT 59715
+                <br>
+                (406)234-7847
+                <br>    
+                contactus@mountainspoke.com
+            </p>
+        </aside>
+        <p class="footer-bar">&copy;&nbsp; 2018 All Rights Reserved &nbsp;&bull;&nbsp;  Mountain Spoke Cycling &nbsp;&bull;&nbsp; <span id="currentdate"></span>
+        </p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js" ></script>
+   
+</body>
+</html>

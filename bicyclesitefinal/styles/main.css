@@ -1,0 +1,496 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+* { box-sizing: border-box;}
+
+
+    /*----------- BODY --------------*/
+    body {
+        font-size: 16px;
+        color: #BFD5F6;
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    }
+
+
+    /*----------- HEADER --------------*/
+
+        header, nav, main, section, footer { 
+        max-width: 67rem;
+        margin: auto;
+  }
+
+    header {
+        padding: 0 0 0 2%;
+        color: #BFD5F6;
+        background-color: #395785;
+    }
+    header h1 {
+        display: block;
+        font-size: 3rem;
+        text-align: left;
+        padding: 10px;
+        margin: 0 2%;
+        color: #142A4D;
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    }
+
+    .logo {
+        float: left;
+        margin: .25% 0 .25% 0;
+        width: 140px;
+        
+    }
+    header .subheading {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+        padding: .25rem 0;
+
+    }
+    .hdate { 
+        font-size: .8rem;
+        text-align: right;
+        margin: 0 2%;
+    }
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+    nav button {
+        margin: 0 2%;
+        background-color: #FCFFC0;
+        border: 1px solid;
+        border-color: #1E1F03;
+        font-size: 1.6rem;
+        color: #000;
+
+    }
+
+    nav {
+    margin: 0;
+    background: #7591BD;
+
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0em;
+        padding: 0em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: #FCFFC0;        
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    }
+
+    nav ul li {
+        flex: 1 90%;
+        border:1px solid #7591BD;
+    }
+
+    nav ul li a {
+        display:block;
+        color: rgba( 30, 31,  3,1);
+        text-align: center;
+        padding: .30em;
+        text-decoration: none;
+        font-size: 1.25rem;
+    }
+
+    nav ul li:first-child a {}
+
+
+
+    nav ul li.active a {background-color: #6E7315; color: #fff;}
+    nav ul li a:hover {background-color: rgba( 30, 31,  3,1); color: #FCFFC0 ;}
+
+
+
+
+
+
+
+
+
+/*----------- MAIN --------------*/
+    main {
+        padding: 0 2%;
+        min-height: 10rem;
+        background-color: #7591BD;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        color: #142A4D;
+        padding: 1rem;
+        margin: auto;
+        
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+        color: #142A4D;
+        margin: 0;
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: auto;
+        padding: 1rem;
+        color: #142A4D;
+       
+        
+
+    }
+
+    p { margin: 0; text-align: center; padding-bottom: 1rem;}
+
+    main figure { margin: 0; width: 100%;}
+
+    main figure img { margin: 0; width: 100%;}
+
+
+    section h3 { margin: 0; }
+
+    section.current { 
+        border: solid 1px;
+        display: inline-block; }
+
+    section picture img { display: block; width: 20%;
+    }
+
+/*----------- Contact Us Page --------------*/
+
+/*----------- Contact Us Form --------------*/
+
+ /*-----COLUMNS -----*/
+   
+
+     #form-flex {
+        max-width: 64rem;
+        margin: auto;
+        
+	    }
+
+
+    .contact { 
+        display: flex;
+	    flex-direction: column;
+        margin: auto;
+        padding: .5rem 1rem;}
+ 
+
+    iframe {
+        max-width: 200px;
+        max-height: 200px
+}
+   
+    
+
+    
+    fieldset {
+        background-color: #6E7315;
+       
+        border-radius: .8em;
+        max-width: 75%;
+        margin:  1.5rem 0;
+        border: 2px solid #FCFFC0;
+
+    }
+    legend {
+        color: #FCFFC0;
+        margin-left: 8%;
+        padding: .5rem;
+        background-color: #6E7315;
+        border-radius: .4em;
+        
+        
+        
+    }
+
+    label {
+        display: block;
+        color: #FCFFC0;
+        padding: 0 2rem 0 1rem;
+        
+    }
+
+    label input {
+        width: 80%;
+        padding: .3rem;
+        border: 2px solid #1E1F03;
+    
+    }
+
+    label span {
+        display: block;
+        font-size: 1rem;
+        color: #FCFFC0;
+        padding-top: .6rem;
+        padding-bottom: .4rem;
+        
+    }
+
+    .textbox { border: 2px solid #1E1F03;}
+
+    .contact p {
+        color: #142A4D;
+    }
+
+    .contactinfo{
+        color: #BFD5F6;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    
+    input[type="textarea"] {
+        width: 80%; 
+        padding: 1rem;
+    }
+    
+
+
+/*-----buttons -----*/
+    input.submitBtn {
+       
+        color: #FCFFC0;
+        border: 1px solid #1E1F03;
+        border-radius: 7px;
+        width: 60%;
+        margin: .5em;
+        font-size: 1em;
+        padding: .6em;
+        background: #6E7315;
+        box-shadow: 4px 4px 10px #6E7315;
+    }
+
+    input.resetBtn {
+        color: black;
+        border: 1px solid #111;
+        border-radius: 7px;
+        width: 35%;
+        margin: 10px;
+        font-size: 1em;
+        padding: 10px;
+        background: white;
+        box-shadow: 4px 4px 10px #666;
+        }
+
+
+
+
+/*--------Thank You Page ----------*/   
+    main.thanks {
+        width:90%;
+        margin: auto;
+        
+    }
+    
+    h1.thanks-title {
+        text-align: center;
+        font-style: italic;
+        font-weight: bolder;
+                
+    }
+    
+    article.thanks-page {
+        
+        text-align: center;
+        
+    }
+
+
+/*------Gallery Grid----------*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem; 
+    }
+
+    .gallery-image img {
+        width: 13rem;
+        margin: 0;
+    }
+
+    /* rounded corners - boxmodel */
+    .gallery-image img {
+        border-radius: 10px 15px;
+        opacity: .90;
+        width: 250px;
+        height: 145px;
+    }
+
+
+    /* simple opacity */
+    .opac {opacity: .1;}
+
+
+    /* hover effect - not anchor tags around images */
+    .gallery-image img:hover {box-shadow: 5px 5px 10px gray;}
+
+
+    figcaption {}
+
+
+    /*---- Weather Summary Flex ----------*/   
+
+    .img weathericon {
+
+        align-content: center;
+    }
+
+    #summary { 
+        display: flex;
+        flex-direction: column; 
+        border: 2px solid black;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #summary > .highlow {
+
+        text-align: center;
+        flex: auto;       
+    }
+
+    #summary > .current {
+
+        flex: auto;
+        text-align: center;
+        padding: 10px
+    }
+
+    #summary > .conditions {
+
+        flex: auto;
+        padding: 10px;        
+    } 
+
+    #summary > .windchill {
+
+        flex: auto;
+        padding: 10px 10px;   
+    }
+
+
+
+
+
+
+
+    /*----Town Article and Image-----*/
+
+
+    section h3 {
+        color: #142A4D;
+        padding: .25rem;
+        margin: 0;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;     
+    } 
+
+    .town-article { 
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .town-img {
+        width: 100%;
+    }
+
+/*--------- Adventure page  --------*/
+    section {
+        max-width: 64rem;
+        margin:  auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .adventure {
+        border:2px solid #030A15; 
+        width: 280px; 
+        height: 200px;
+    }
+    .article {
+        background-color:#7591BD; 
+        color:#BFD5F6;
+        padding: .5rem;
+        
+    }
+
+
+
+  
+
+
+
+
+
+    /*----------- Footer --------------*/
+
+    footer {
+        font-size: .8rem;
+        color: #1C020A;
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+        background-color: #B54464;
+        text-align: center;
+    }
+    .footer-bar { 
+        padding: .8rem 3rem; 
+        border-top:  2px solid #1C020A;}
+
+    .footer-info {
+        border-top:  2px solid #1C020A;
+    }
+
+    aside h1 { 
+        margin: 0 0; 
+        padding: .5rem; 
+        color: #1C020A;
+        font-size: 1rem}
+
+    aside p { 
+        margin: 0 0; 
+        font-size:;
+        padding-bottom: .5rem;
+        color: #1C020A;
+    }
+
+    footer>p {
+        color:#FCBED0;
+        padding: .75rem;
+        margin: 0;
+        background-color: #69132C;
+        border-top:  1px solid #1C020A;
+    }
+
+
+
+    /*----- Clearfix: Force an Element not to collapse -----*/
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+

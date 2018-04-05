@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storm Center</title>
+  <meta name="author" content="Aaron Foote">
+  <meta name="description" content="stormcenter input from user about storms">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+	<header>
+        <img src="images/weatherwatcherlogo159x53.png" alt="Weather Watcher logo" width="159" height="53">
+        <h1>Weather Watcher</h1>
+        <div class="subheading"><em>Showing Weather and Telling the Story</em></div>
+    </header>
+    
+    
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li> 
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li> 
+            <li><a href="gallery.html"
+                   >Gallery</a></li> 
+        </ul>
+    </nav>
+    
+    
+
+   
+        <section id=flex-bar>
+            <h1 class="title">Storm Center</h1>
+        </section>  
+        <section id="form-flex">
+        
+        <aside class="left">
+            
+
+        <form action="thanks.html" method="post">
+
+
+        <fieldset>
+            <legend><span>Personal Information</span></legend>
+            <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z]{5,75}" required></label>
+            <label><span>E-mail:</span><input name="email" type="email" placeholder="example@domainname.com"></label>  
+            <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9-]{12}" required></label> 
+            <label><span>Zip Code:</span><input name="zipcode" type="number" ></label> 
+        </fieldset>
+
+
+        <fieldset>
+            <legend><span>Storm Information</span></legend>
+            <label for="stormdate"><span>Storm Date:</span><input type="date" id="stormdate"></label>
+             <label>
+            <span>Storm Type:</span>
+            <input type="text" name="stormtype" list="stormtypes">   
+            <datalist id="stormtypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+            </datalist>
+            </label>
+            <label for="rating"><span>Storm Severity (1 to 10) with 10 being the worst:</span></label>
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="stormRating(this.value)" onchange="stormRating(this.value)">
+            <span id="ratingvalue">5</span>
+            <label for="r1"><span>Is user in-danger? (Select One)</span></label>
+                <input type="radio" name="r1" value="Yes"> Yes<br>
+                <input type="radio" name="r1" value="No" checked> No <br>
+                <input type="radio" name="r1" value="Maybe"> Maybe <br>
+
+            <label><span>Additional Info</span></label>
+            <textarea name="message" rows="3" cols="30" maxlength="140"></textarea>
+            <label>
+            <span>Storm Region</span>
+            <select>   
+                <option selected> Choose a Region</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springville">Springville</option>
+            </select>
+            </label>
+        </fieldset>
+
+
+        <input type="submit" value="Storm Data" class="submitBtn">
+        <input type="reset" value="Reset" class="resetBtn">                             
+        </form>
+        </aside>
+
+        <aside class="right">
+            
+            <figure>
+                <h2>Storm Images</h2>
+                <div class="storm-image"><a href="#"><img src="images/wavecrash620-350.jpg" alt="Weather Pic" width="300" height="200"></a></div>
+                <div class="storm-image"><a href="#"><img src="images/cloudcity525-350.jpg" alt="Weather Pic" width="300" height="200"></a></div>
+                <div class="storm-image"><a href="#"><img src="images/bikerinrain526-350.jpg" alt="Weather Pic" width="300" height="200"></a>
+                </div>
+                <div class="storm-image"><a href="#">
+                <img src="images/lightening622-350.jpg" alt="Weather Pic" width="300" height="200"></a>
+                </div>
+            </figure>
+
+        </aside>
+    
+    </section>
+       
+    
+    
+  
+    <footer>
+        <aside>
+            <h4>The Weather Watcher</h4>
+            <p>
+                785 N Weather St
+                <br>
+                Franklin, MU 83454
+                <br>
+                (202)544.7878
+                <br>    
+                contact@weatherwatcher.com
+            </p>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &bull; Weather Watcher &bull; <span id="currentdate"></span>
+        </p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js" ></script>
+
+    <script>
+    function stormRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}    
+        
+    </script>
+    
+    
+   </body>
+</html>
