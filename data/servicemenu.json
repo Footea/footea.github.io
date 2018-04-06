@@ -1,0 +1,32 @@
+{
+  "services" : [
+  {
+    "name": "Basic Tune-Up",
+    "cost": "$59 +Parts",
+    "first": "Gear and Brake Adjustment",
+    "second": "Lube Chain/Cables",
+    "third": "Spot True Wheels",
+    "fourth": "Air tires",
+    "last": "Wipe down bike"
+  },
+  {
+    "name": "Annual Tune-Up",
+    "cost": "$80 +Parts",
+    "first": "Sport Tune + the following",
+    "second": "Lube complete drivetrain",
+    "third": "True wheels in truing stand",
+    "fourth": "Adjust bearings",
+    "last": "Thoroughly Clean bike"
+  },
+
+  {
+   "name": "Pro Tune-Up",
+    "cost": "$120 +Parts",
+    "first": "Deluxe Tune Up + the following",
+    "second": "Replace gear/brale cables & chain",
+    "third": "De-grease derailleurs, chain, crank, cassette",
+    "fourth": "Clean drivetrain",
+    "last": "Thoroughly Clean bike"
+  },
+ ]
+}
