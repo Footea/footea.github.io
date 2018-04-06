@@ -1,5 +1,5 @@
 var output = document.querySelector('section');
-var requestURL = 'https://footea.github.io/service/data/servicemenu.json';
+var requestURL = 'https://footea.github.io/data/servicemenu.json';
 var request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = 'json';
@@ -7,46 +7,44 @@ request.send();
 
 request.onload = function() {
 	var jsondata = request.response;
-	var cities = jsondata['services'];
-	for (var i = 0; i < cities.length; i++) {
+	var repair = jsondata['services'];
+	for (var i = 0; i < repair.length; i++) {
         
-        if (i === 2) {continue;}
+        
         var myArticle = document.createElement('article');
 		var level = document.createElement('h2');
-		var year = document.createElement('p');
-        var motto = document.createElement('p');
-        var population = document.createElement('p');
-        var avgrain = document.createElement('p');
-        var eventlist = document.createElement('ul');
-        var townimg = document.createElement('img');
+		var cost = document.createElement('p');
+        var first = document.createElement('p');
+        var second = document.createElement('p');
+        var third = document.createElement('p');
+        var fourth = document.createElement('p');
+        var last = document.createElement('p');
         
         
         
         
         
-        city.textContent = services[i].name;  
-        year.textContent = 'Established: ' + services[i].yearFounded;
-        motto.textContent = '"' + cities[i].motto + '"';
-        population.textContent ='Population: ' + cities[i].currentPopulation;
-        avgrain.textContent = 'Average Rainfall: ' + cities[i].averageRainfall + '"';
+        level.textContent = repair[i].name;  
+        cost.textContent = repair[i].cost;
+        first.textContent = repair[i].first;
+        second.textContent = repair[i].second;
+        third.textContent = repair[i].third;
+        fourth.textContent = repair[i].fourth;
+        last.textContent = repair[i].last;
         
         
         
-        var currentEvents = services[i].events;
-        for (var j = 0; j < currentEvents.length; j++) {
-            var listItem = document.createElement('li'); 
-            listItem.textContent = currentEvents[j];
-        eventlist.appendChild(listItem);
     }
         
         
         
-		myArticle.appendChild(city);
-		myArticle.appendChild(motto);
-        myArticle.appendChild(year);
-        myArticle.appendChild(population);
-        myArticle.appendChild(avgrain);
-        myArticle.appendChild(eventlist);
+		myArticle.appendChild(level);
+		myArticle.appendChild(cost);
+        myArticle.appendChild(first);
+        myArticle.appendChild(second);
+        myArticle.appendChild(third);
+        myArticle.appendChild(fourth);
+        myArticle.appendChild(last);
         
         
         
