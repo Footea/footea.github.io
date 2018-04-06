@@ -153,7 +153,7 @@
 
     main figure { margin: 0; width: 100%;}
 
-    main figure img { margin: 0; width: 100%;}
+  
 
 
     section h3 { margin: 0; }
@@ -162,10 +162,87 @@
         border: solid 1px;
         display: inline-block; }
 
-    section picture img { display: block; width: 20%;
+    section img { display: block; width: 75%;
     }
 
-/*----------- Contact Us Page --------------*/
+/*----------- Home Page --------------*/
+  section img { float: right; height: 50%;
+    
+    }
+
+
+   /*----Home Page Article and Image-----*/
+
+
+  
+    main article.home-art {
+    display: flex;
+    flex-direction: column;
+}
+     
+
+    #home-article {
+        width: 50%;
+        margin: 0 0 0 2%;      
+} 
+    
+
+    #home-article { 
+        
+        font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*----- Service Menu section styles -----*/
+    figure img {
+        width: 60%;
+        margin: 1rem;
+        
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(225px, auto);
+        grid-gap: 25px;
+        max-width: 64rem;
+        margin: auto;
+      
+    }
+
+    .menu article {
+    border: 2px solid #6E7315;
+    border-radius: 5px;
+    background-color: #FCFFC0;
+    padding: 0;
+    margin: 1rem;
+    }
+
+    section p {
+        color: #1E1F03;
+        font-size: 1.2rem;
+        margin: 2%; 
+        padding: .5rem;
+    }
+    section p:nth-child(2) {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.50rem;
+        margin: 0; 
+}
+    
+
+   section h2 {
+        color: #1E1F03;
+        margin-bottom: .1rem;
+        padding: .1rem;
+    }
+    section h1 {
+        color: #1E1F03;
+        margin-bottom: .1rem;
+        padding: 1rem 1rem;
+    }
 
 /*----------- Contact Us Form --------------*/
 
@@ -240,14 +317,18 @@
     .textbox { border: 2px solid #1E1F03;}
 
     .contact p {
-        color: #142A4D;
+        color: #BFD5F6;
+        text-align: left;
+        font-size: 16px;
+        
     }
 
     .contactinfo{
-        color: #BFD5F6;
+        color: #142A4D;
         text-align: left;
         font-weight: 600;
         font-size: 1.2rem;
+        padding: 0;
     }
 
     
@@ -269,7 +350,7 @@
         font-size: 1em;
         padding: .6em;
         background: #6E7315;
-        box-shadow: 4px 4px 10px #6E7315;
+        box-shadow: 4px 4px 10px #1E1F03;
     }
 
     input.resetBtn {
@@ -281,7 +362,7 @@
         font-size: 1em;
         padding: 10px;
         background: white;
-        box-shadow: 4px 4px 10px #666;
+        box-shadow: 4px 4px 10px #1E1F03;
         }
 
 
@@ -308,37 +389,7 @@
     }
 
 
-/*------Gallery Grid----------*/
 
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2rem; 
-    }
-
-    .gallery-image img {
-        width: 13rem;
-        margin: 0;
-    }
-
-    /* rounded corners - boxmodel */
-    .gallery-image img {
-        border-radius: 10px 15px;
-        opacity: .90;
-        width: 250px;
-        height: 145px;
-    }
-
-
-    /* simple opacity */
-    .opac {opacity: .1;}
-
-
-    /* hover effect - not anchor tags around images */
-    .gallery-image img:hover {box-shadow: 5px 5px 10px gray;}
-
-
-    figcaption {}
 
 
     /*---- Weather Summary Flex ----------*/   
@@ -388,27 +439,7 @@
 
 
 
-    /*----Town Article and Image-----*/
-
-
-    section h3 {
-        color: #142A4D;
-        padding: .25rem;
-        margin: 0;
-    }
-
-    .article {
-        display: flex;
-        flex-direction: column;     
-    } 
-
-    .town-article { 
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .town-img {
-        width: 100%;
-    }
+ 
 
 /*--------- Adventure page  --------*/
     section {
@@ -418,12 +449,12 @@
         flex-wrap: wrap;
     }
 
-    article {
+    .advarticle {
         display: flex;
         flex-direction: column;
     }
 
-    article:nth-child(odd) {
+    advarticle:nth-child(odd) {
         flex-direction: column;
     }
 

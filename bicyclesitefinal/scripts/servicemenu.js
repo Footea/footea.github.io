@@ -12,8 +12,8 @@ request.onload = function() {
         
         
         var myArticle = document.createElement('article');
-		var level = document.createElement('h2');
-		var cost = document.createElement('p');
+		var level = document.createElement('h1');
+		var cost = document.createElement('h2');
         var first = document.createElement('p');
         var second = document.createElement('p');
         var third = document.createElement('p');
@@ -34,7 +34,7 @@ request.onload = function() {
         
         
         
-    }
+  
         
         
         

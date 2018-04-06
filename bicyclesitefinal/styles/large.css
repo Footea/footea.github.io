@@ -141,27 +141,7 @@
         
      }
     
-/*----------Town Page Forecast Table --------------*/
-    
-    table.forecast { 
-        border-collapse: collapse; 
-        border-color: #135E66;
-        width: 100%; 
-    }
 
-    table, th, td {
-        background-color: #fff;
-        padding: .3rem;    
-        border: 2px solid #135E66;
-        text-align: center;
-    }
-
-    section.forecast h3 { 
-        margin: auto;
-        padding: 1rem;
-        color: #303030;
-        font-family: "Bodoni MT", sans-serif;
-    }
 
     /*----------- FOOTER --------------*/
 
@@ -178,12 +158,12 @@
     
 /*--------- Adventure page  --------*/
 
-    article {
+    .advarticle {
         display: flex;
         flex-direction: row;
     }
 
-    article:nth-child(odd) {
+    .advarticle:nth-child(odd) {
         flex-direction: row-reverse;
     }
     

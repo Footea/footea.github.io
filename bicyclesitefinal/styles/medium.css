@@ -119,35 +119,7 @@
     
     
     
-/*----Town Page Forecast Table ----------*/        
 
-    main section.forecast {
-        padding: 5px 50px 5px 50px;
-
-        margin: 0;
-        text-align: center;
-        font-family: "Modini MT", serif;
-                  }
-
-    table.forecast { 
-        border-collapse: collapse; 
-        border-color: #135E66;
-        margin: auto;
-        width: 65%; }
-
-    table, th, td {
-        background-color: #fff;
-        padding: 3px;    
-        border: 2px solid #135E66;
-        text-align: center;
-    }
-
-    section.forecast h3 { 
-        margin: auto;
-        padding: 1rem;
-        color: #303030;
-        font-family: "Bodoni MT", serif;
-    }
     
     
 /*--------Thank You Page ----------*/   
