@@ -4,20 +4,7 @@
    
 
 /*----------- BODY --------------*/
-    
-/*-Flex Layout----*/
-    .article {
-        
-        flex-direction: row;
-    } 
-    .town-article { 
-        width: 50%;
-        margin: 1rem;
-    }
 
-     .town-img {
-        width: 75%; 
-    }
 
 
 
@@ -80,42 +67,7 @@
         grid-gap: 2rem;
     }  
 
-    /*---- Town Page Weather Summary Flex ----------*/      
 
-    #summary { 
-        display: flex;
-        flex-direction: row; 
-        border: 1px solid black;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    #summary > .highlow {
-        border: 1px solid black;
-        padding: 10px;
-        flex: auto;       
-    }
-
-    #summary > .current {
-        border: 1px solid black;
-        flex: auto;
-        text-align: center;
-        padding: 10px
-    }
-
-    #summary > .conditions {
-        border: 1px solid black;
-        flex: auto;
-        padding: 10px;        
-    } 
-
-    #summary > .windchill {
-        border: 1px solid black;
-        flex: auto;
-        padding: 10px 10px;   
-    }
-    
     
     
     
@@ -146,24 +98,109 @@
      
     
     
-/*--------- Adventure page  --------*/
-    
-/*--------- Adventure page  --------*/
-
-    article {
-        display: flex;
-        flex-direction: row;
+/*----- Service Menu section styles -----*/
+    figure img {
+        width: 60%;
+        margin: 1rem;
+        
     }
 
-    article:nth-child(odd) {
-        flex-direction: row-reverse;
+     .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(225px, auto);
+        grid-gap: 25px;
+        max-width: 64rem;
+        margin: auto;
+      
     }
 
+    .menu article {
+    border: 2px solid #6E7315;
+    border-radius: 5px;
+    background-color: #FCFFC0;
+    padding: 0;
+    margin: 1rem;
+    }
+
+    section p {
+        color: #1E1F03;
+        font-size: 1.2rem;
+        margin: 2%; 
+        padding: .5rem;
+    }
+    section p:nth-child(2) {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.50rem;
+        margin: 0; 
+}
     
-/*----Home Page section Town Stats and Image-----*/
+
+   section h2 {
+        color: #1E1F03;
+        margin-bottom: .1rem;
+        padding: .1rem;
+    }
+    section h1 {
+        color: #1E1F03;
+        margin-bottom: .1rem;
+        padding: 1rem 1rem;
+    }
+    
+/*--------- Adventure page  --------*/
+
+
+    .trips {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(175px, auto);
+        grid-gap: 25px;
+        max-width: 35rem;
+        margin: auto;
+    }
+    
+
 
     
+    /*--------- Adventure page Register --------*/
+
+    .advregister {
+        display: block;
+        color: #FCFFC0;
+        padding: 0 2rem 0 1rem;
+        
+    }
+
+    .advregister input {
+        width: 65%;
+        padding: .3rem;
+        border: 2px solid #1E1F03;
     
+    }
+
+    .advregister span {
+        display: block;
+        font-size: 1rem;
+        color: #FCFFC0;
+        padding-top: .6rem;
+        padding-bottom: .4rem;
+        
+    }
+
+/*-----buttons -----*/
+    input.registersubmitBtn {
+       
+        color: #FCFFC0;
+        border: 1px solid #1E1F03;
+        border-radius: 7px;
+        width: 40%;
+        margin: .5em;
+        font-size: 1em;
+        padding: .6em;
+        background: #6E7315;
+        box-shadow: 4px 4px 10px #1E1F03;
+    }
     
     
     

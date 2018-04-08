@@ -10,18 +10,6 @@
  
     
     
-.article {
-    display: flex;
-    flex-direction: row;
-} 
-.town-article { 
-    width: 50%;
-    margin: 1rem;
-}
-
- .town-img {
-    width: 50%; 
-}
 
 
 /*----------- HEADER --------------*/
@@ -96,50 +84,7 @@
 
 
 
-    /*-----------Town Page Weather Summary Flex--------------*/    
 
-    #summary { 
-        display: flex;
-        flex-direction: row; 
-        border: 1px solid black;
-        max-width: 960px;
-        padding: 0;
-        margin: Auto;
-    }
-
-    #summary > .highlow {
-        border: 1px solid black;
-        padding: 10px;
-        flex: auto;       
-    }
-
-    #summary > .current {
-        border: 1px solid black;
-        flex: auto;
-        padding: 10px
-    }
-
-    #summary > .conditions {
-        border: 1px solid black;
-        flex: auto;
-        padding: 10px;        
-    } 
-
-    #summary > .windchill {
-        border: 1px solid black;
-        flex: auto;
-        padding: 10px 10px;   
-    }    
-
-    
-    
-    
-    main section.forecast {
-        padding: 5px 50px 5px 50px;
-        margin: 0;
-        text-align: center;
-        
-     }
     
 
 
@@ -152,20 +97,49 @@
     nav ul { flex-direction: row;}
     nav button { display: none;}
 
-  /*----Home Page secion JSON -----*/ 
+ /*----- Service Menu section styles -----*/
 
-
+      .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(225px, auto);
+        grid-gap: 25px;
+        max-width: 64rem;
+        margin: auto;
+      
+    }
     
 /*--------- Adventure page  --------*/
 
-    .advarticle {
-        display: flex;
-        flex-direction: row;
+    .trips {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(225px, auto);
+        grid-gap: 25px;
+        max-width: 64rem;
+        margin: auto;
+      
+    }
+    
+    
+    
+       /*--------- Adventure page Register --------*/
+
+   
+
+    .advregister input {
+        width: 45%;
+    
     }
 
-    .advarticle:nth-child(odd) {
-        flex-direction: row-reverse;
+
+/*-----buttons -----*/
+    input.registersubmitBtn {
+      
+        width: 40%;
+        
     }
+    
     
 
 

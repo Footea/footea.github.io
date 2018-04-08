@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Storm Center</title>
+  <title>Events | Mountain Spoke Cycling</title>
   <meta name="author" content="Aaron Foote">
-  <meta name="description" content="stormcenter input from user about storms">
+  <meta name="description" content="cycling event of the year Continental Divide Trail Race 100, 50, 25 miles">
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -37,11 +37,11 @@
             <li><a href="contact.html">Contact Us</a></li> 
         </ul>
     </nav>
-    
+    <main>
 
    
         <section id=flex-bar>
-            <h1 class="title">Storm Center</h1>
+            <h1>Cycle the Continental Divide Montana Style</h1>
         </section>  
         <section id="form-flex">
         
@@ -51,53 +51,26 @@
         <form action="thanks.html" method="post">
 
 
-        <fieldset>
-            <legend><span>Personal Information</span></legend>
-            <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z]{5,75}" required></label>
-            <label><span>E-mail:</span><input name="email" type="email" placeholder="example@domainname.com"></label>  
-            <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9-]{12}" required></label> 
-            <label><span>Zip Code:</span><input name="zipcode" type="number" ></label> 
+        <fieldset class="event">
+            <legend><span>Contact Us</span></legend>
+            <label><span>Your Name:</span><input name="fullname" type="text"  pattern="[a-zA-Z]{5,75}" required></label>
+            <label><span>Your Email:</span><input name="email" type="email" ></label>  
+              <label for="r1"><span>Choose a race</span></label>
+                <input class="eventchoice" type="radio" name="r1" value="Yes">#CDT100<br>
+                <input class="eventchoice" type="radio" name="r1" value="No" checked>#CDT50 <br>
+                <input class="eventchoice" type="radio" name="r1" value="Maybe">#CDT25 <br> 
+            <label><span>Message</span></label>
+            <textarea class="eventmessage" name="message" rows="5" cols="40" maxlength="800"></textarea>
+           
+            
         </fieldset>
 
 
-        <fieldset>
-            <legend><span>Storm Information</span></legend>
-            <label for="stormdate"><span>Storm Date:</span><input type="date" id="stormdate"></label>
-             <label>
-            <span>Storm Type:</span>
-            <input type="text" name="stormtype" list="stormtypes">   
-            <datalist id="stormtypes">
-            <option value="Flash Flood"></option>
-            <option value="Hail"></option>
-            <option value="Hurricane"></option>
-            <option value="Thunderstorm"></option>
-            <option value="Tornado"></option>
-            </datalist>
-            </label>
-            <label for="rating"><span>Storm Severity (1 to 10) with 10 being the worst:</span></label>
-            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="stormRating(this.value)" onchange="stormRating(this.value)">
-            <span id="ratingvalue">5</span>
-            <label for="r1"><span>Is user in-danger? (Select One)</span></label>
-                <input type="radio" name="r1" value="Yes"> Yes<br>
-                <input type="radio" name="r1" value="No" checked> No <br>
-                <input type="radio" name="r1" value="Maybe"> Maybe <br>
-
-            <label><span>Additional Info</span></label>
-            <textarea name="message" rows="3" cols="30" maxlength="140"></textarea>
-            <label>
-            <span>Storm Region</span>
-            <select>   
-                <option selected> Choose a Region</option>
-                <option value="Franklin">Franklin</option>
-                <option value="Greenville">Greenville</option>
-                <option value="Springville">Springville</option>
-            </select>
-            </label>
-        </fieldset>
+       
 
 
-        <input type="submit" value="Storm Data" class="submitBtn">
-        <input type="reset" value="Reset" class="resetBtn">                             
+        <input type="submit" value="Register" class="eventsubmitBtn">
+                                    
         </form>
         </aside>
 
@@ -117,7 +90,7 @@
         </aside>
     
     </section>
-       
+    </main>   
     
     
   
