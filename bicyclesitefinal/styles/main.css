@@ -118,6 +118,8 @@
         padding: 0 2%;
         min-height: 10rem;
         background-color: #7591BD;
+         color: #1C020A;
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     }
 
     h1 {
@@ -169,7 +171,58 @@
 
 
 
-   /*----Home Page Article and Image-----*/
+
+    .biking {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(225px, auto);
+        grid-gap: 25px;
+        max-width: 20rem;
+        padding: 0;
+        margin: auto;
+      
+    }
+
+    .bikearticle {
+    border: 2px solid #1C020A;
+    border-radius: 5px;
+    background-color: #FCBED0;
+    padding: 0;
+    margin: 1rem;
+    }
+
+    .advbikeinfo {
+        color: #1C020A;
+        font-size: .8rem;
+        margin: 2%; 
+        padding: .5rem;
+    }
+  
+    .advdescription  {    
+        color: #1E1F03;
+        padding: 0;
+        
+    }
+
+   .biketype {
+        color: #1C020A;
+        margin-bottom: .1rem;
+        padding: .1rem;
+    }
+
+.bikeimgage { max-width: 400px;
+            max-height: 300px;
+    
+}
+    section h1 {
+        color: #1E1F03;
+        margin-bottom: .1rem;
+        padding: 1rem 1rem;
+    }
+
+
+
+/*----Home Page Article and Image-----*/
 
 
   
@@ -179,23 +232,32 @@
 }
      
 
-    #home-article {
+    .home-article {
         width: 50%;
         margin: 0 0 0 2%;      
 } 
     
 
-    #home-article { 
+    .home-article { 
         
         font-family: 'Roboto', sans-serif;
 }
 
 
+    .alacarte {
+        color: #FCBED0;
+        max-height: 4rem;
+        margin: 1rem;
+        background-color: #69132C;
+    }
+
+
+
 
 /*----- Service Menu section styles -----*/
     figure img {
-        width: 60%;
-        margin: 1rem;
+        width: 100%;
+        
         
     }
 
@@ -271,9 +333,9 @@
     
     fieldset {
         background-color: #6E7315;
-       
+       padding: 1rem;
         border-radius: .8em;
-        max-width: 75%;
+        max-width: 85%;
         margin:  1.5rem 0;
         border: 2px solid #FCFFC0;
 
@@ -391,7 +453,10 @@
 
 
  /*---------- Events Page --------------*/   
-
+.right {
+    
+    padding: 
+}
 
 
 
@@ -429,13 +494,14 @@
         background-color: #6E7315;
         border-radius: .9em;
         max-width: 85%;
+        padding: 1rem;
         margin:  1.5rem 0;
         border: 2px solid #FCFFC0;
 
     }
-    legend {
+    .eventcontact {
         color: #FCFFC0;
-        margin-left: 8%;
+        margin: auto;
         padding: .5rem;
         background-color: #6E7315;
         border-radius: .4em;
@@ -469,7 +535,8 @@
 
    
     .eventchoice {
-        color:#1E1F03;
+        color: #1E1F03;
+        border: 2px solid #1E1F03;
         
 }
     
@@ -504,11 +571,7 @@
 
 /*--------- Adventure page  --------*/
    
-    .adventure {
-        width: 60%;
-        margin: 1rem;
-        
-    }
+ 
 
 
     .trips {
@@ -556,47 +619,89 @@
 
 /*--------- Adventure page Register --------*/
 
-    .advregister {
-        display: block;
-        color: #FCFFC0;
-        padding: 0 2rem 0 1rem;
-        
-    }
+.bikeDropdown {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	width:960px;
+	height:100px;
+	margin:auto;
+	list-style:none;
+	padding:0px;
+	border-top: 4px solid red;
+}
 
-    .advregister input {
-        width: 100%;
-        padding: .3rem;
-        border: 2px solid #1E1F03;
-    
-    }
+.bikeDropdown li {
+	width: 190px;
+	height: 48px;
+	float: left;
+	text-align: center;
+	background:rgb(240, 240, 240);
+	font-family: sans-serif;
+	line-height: 3.6;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	font-size: 14px;
+	margin: 1px;
+}
 
-    .advregister span {
-        display: block;
-        font-size: 1rem;
-        color: #FCFFC0;
-        padding-top: .6rem;
-        padding-bottom: .4rem;
-        
-    }
+.bikeDropdown li > ul {
+	position:relative;
+	width:190px;
+	clear:both;
+	/* Hide the Submenus */
+	display:none;
+}
 
-/*-----buttons -----*/
-    input.registersubmitBtn {
-       
-        color: #FCFFC0;
-        border: 1px solid #1E1F03;
-        border-radius: 7px;
-        width: 80%;
-        margin: .5em;
-        font-size: 1em;
-        padding: .6em;
-        background: #6E7315;
-        box-shadow: 4px 4px 10px #1E1F03;
-    }
+h4 {
+	margin:0px;
+	padding:0px;
+}
 
-
+/*--------- Bikes Page --------*/
   
+#accordian-container {
+	width: 90%;
+	
+	border: 1px solid #DF4910;
+	overflow: auto;
+}
+ul,li {
+	list-style: none;
+}
+.accordian-title {
+	height: 40px;
+	background: #DF4910;
+	color: #fff;
+	text-align: center;
+	padding-top: 13px;
+}
 
+.snippets-accordian li {
+	padding: 20px;
+}
 
+.snippets-accordian li.q {
+	background: #666666;
+	color: #050505;
+	font-weight: bold;
+	font-size: 120%;
+	border-top: 1px solid #DF4910;
+	border-bottom: 1px solid #DF4910;
+	cursor: pointer;
+}
+
+.snippets-accordian li.a {
+	background: #1D1F20;
+	display: none;
+}
+
+.rotate {
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
 
 
 
@@ -608,6 +713,7 @@
         font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
         background-color: #B54464;
         text-align: center;
+        border-top:  2px solid #1C020A;
     }
     .footer-bar { 
         padding: .8rem 3rem; 

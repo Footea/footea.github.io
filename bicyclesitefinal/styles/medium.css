@@ -27,7 +27,24 @@
 
     
 
-  
+ 
+    
+    
+ /*----------- Home Page --------------*/   
+    
+  .biking {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(175px, auto);
+        grid-gap: 25px;
+        max-width: 35rem;
+        padding: 0;
+        margin: auto;
+      
+    }    
+    
+    
+    
 /*----------- Contact Us Page --------------*/
 
 /*----------- Contact Us Form --------------*/
@@ -99,15 +116,11 @@
     
     
 /*----- Service Menu section styles -----*/
-    figure img {
-        width: 60%;
-        margin: 1rem;
-        
-    }
+ 
 
      .menu {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-auto-rows: minmax(225px, auto);
         grid-gap: 25px;
         max-width: 64rem;

@@ -1,12 +1,12 @@
-  
-var $listContainer = $('dl.description-list');
+//Accordian
+$(document).ready(function() {
+	$('li.q').on('click', function() {
+		$(this).next().slideToggle(150).siblings('li.a').slideUp();
 
-$listContainer.on('click', 'dt:not(.active)', function(){
-	$listContainer.find('dt.active').removeClass('active');
-	$listContainer.find('dd').slideUp();
-	$(this).addClass('active').next('dd').slideDown();
-});
+		var arrow = $(this).children('i');
 
-$listContainer.on('click', 'dt.active', function(){
-	$(this).removeClass('active').next('dd').slideUp();
+		$('i').not(arrow).removeClass('rotate');
+
+		arrow.toggleClass('rotate');
+	});
 });
