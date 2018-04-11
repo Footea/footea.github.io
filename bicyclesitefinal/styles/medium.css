@@ -41,8 +41,20 @@
         padding: 0;
         margin: auto;
       
-    }    
+        }   
     
+/*----Home Page Article and Image-----*/
+       main section .home-article {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .homebikefig {
+        max-width: 80%;
+        margin: 0;
+    }
+       
+   
     
     
 /*----------- Contact Us Page --------------*/
@@ -74,22 +86,19 @@
     
    
   
-/*---------- Form Submit Buttons ----------*/
+/*---------- Event Page ----------*/
+    .right {
+        
+        
+        text-align: center;
+        width: 30%;
+    } 
+    .left {
+        flex: auto;
+        width: 55%;	
+    }
 
-    
-/*---- Gallery Grid ----------*/    
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-    }  
 
-
-    
-    
-    
-
-    
     
 /*--------Thank You Page ----------*/   
     main.thanks {
@@ -226,7 +235,7 @@
 @media only screen and (max-width: 459px) {
     
 /*----------- BODY --------------*/
-    section.forecast { display: none; }
+   
     nav ul.hide {display: none;}
     
 
@@ -240,23 +249,9 @@
     
    
 /*----------- MAIN --------------*/
-    #form-flex > .right {
-        display: none;
-    }   
    
-    
-    #home-fig {
-        width: 50%;
-        float: left;
-    }
    
-        main figure.home-fig {
-        width: 100%;
-        margin: 0 0 0 2%;
-        float: left;       
-    }
 
-    main figure.home-fig img { width: 100%}
     
     
 

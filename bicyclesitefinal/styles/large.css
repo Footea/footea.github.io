@@ -27,14 +27,7 @@
 
     
     
-/*----------- Gallery Page Grid --------------*/
 
-    .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    margin:auto;
-   } 
     
 /*--------Thank You Page ----------*/  
     
@@ -79,8 +72,17 @@
        
   
 
-    /*-----buttons -----*/
+    /*-----events -----*/
   
+    .right {
+  
+    max-width: 35%
+     
+}
+.left {
+    max-width: 55%;
+}
+
 
 
 
@@ -151,7 +153,23 @@
         padding: 0;
         margin: auto;
       
-    }      
+    }    
+    
+    
+    /*----Home Page Article and Image-----*/
+       main section .home-article {
+    display: flex;
+    flex-direction: row;
+           
+   
+    }
+    
+    .homebikefig {
+        max-width: 50%;
+        margin: 0;
+    }
+  
+   
 
 
     /*----------- MAIN --------------*/

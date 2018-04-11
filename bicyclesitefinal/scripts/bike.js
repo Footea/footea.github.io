@@ -1,4 +1,5 @@
-//Accordian
+//Accordian\
+
 $(document).ready(function() {
 	$('li.q').on('click', function() {
 		$(this).next().slideToggle(150).siblings('li.a').slideUp();

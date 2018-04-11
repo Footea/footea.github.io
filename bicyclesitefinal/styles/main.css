@@ -126,7 +126,7 @@
         font-size: 2rem;
         text-align: center;
         color: #142A4D;
-        padding: 1rem;
+        padding: .5rem;
         margin: auto;
         
     }
@@ -134,7 +134,7 @@
     h2 {
         font-size: 1.5rem;
         text-align: center;
-        padding: 1rem;
+        padding: .5rem;
         color: #142A4D;
         margin: 0;
         font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
@@ -144,14 +144,17 @@
         font-size: 1.25rem;
         text-align: center;
         margin: auto;
-        padding: 1rem;
+        padding: .5rem;
         color: #142A4D;
+        font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
        
-        
+      }
 
-    }
-
-    p { margin: 0; text-align: center; padding-bottom: 1rem;}
+    p { font-size: 16px; 
+        text-align: center;
+        color: #BFD5F6;
+        margin: 0;
+        padding-bottom: 1rem;}
 
     main figure { margin: 0; width: 100%;}
 
@@ -226,31 +229,39 @@
 
 
   
-    main article.home-art {
+    main section .home-article {
     display: flex;
     flex-direction: column;
+    
+        margin: 0;
+    
 }
      
 
     .home-article {
-        width: 50%;
-        margin: 0 0 0 2%;      
+        width: 100%;
+        margin: 2rem; 
+        font-family: 'Roboto', sans-serif;
 } 
     
 
-    .home-article { 
+    .monthlybikeinfo { 
+        border: 2px solid #1C020A;
+    border-radius: 5px;
+    background-color: #FCBED0;
+    padding: 0;
+    margin: 1rem;
         
         font-family: 'Roboto', sans-serif;
 }
 
-
-    .alacarte {
-        color: #FCBED0;
-        max-height: 4rem;
-        margin: 1rem;
-        background-color: #69132C;
+    .homebikefig {
+        max-width: 100%;
+        margin: 0;
     }
 
+
+    
 
 
 
@@ -271,38 +282,46 @@
       
     }
 
-    .menu article {
-    border: 2px solid #6E7315;
-    border-radius: 5px;
-    background-color: #FCFFC0;
-    padding: 0;
-    margin: 1rem;
-    }
+        .menu article {
+        border: 2px solid #6E7315;
+        border-radius: 5px;
+        background-color: #FCFFC0;
+        padding: 0;
+        margin: 1rem;
+        }
 
-    section p {
-        color: #1E1F03;
-        font-size: 1.2rem;
-        margin: 2%; 
-        padding: .5rem;
-    }
-    section p:nth-child(2) {
-        font-style: italic;
-        text-align: center;
-        font-size: 1.50rem;
-        margin: 0; 
-}
-    
+        section p {
+            color: #1E1F03;
+            font-size: 1.2rem;
+            margin: 2%; 
+            padding: .5rem;
+        }
+        section p:nth-child(2) {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.50rem;
+            margin: 0; 
+        }
 
-   section h2 {
-        color: #1E1F03;
-        margin-bottom: .1rem;
-        padding: .1rem;
-    }
-    section h1 {
-        color: #1E1F03;
-        margin-bottom: .1rem;
-        padding: 1rem 1rem;
-    }
+    .alacarte {
+            color: #FCBED0;
+            max-height: 4rem;
+            margin: 1rem;
+            background-color: #69132C;
+        }
+
+
+
+       section h2 {
+            color: #1E1F03;
+            margin-bottom: .1rem;
+            padding: .1rem;
+        }
+        section h1 {
+            color: #1E1F03;
+            margin-bottom: .1rem;
+            padding: 1rem 1rem;
+        }
 
 /*----------- Contact Us Form --------------*/
 
@@ -454,8 +473,12 @@
 
  /*---------- Events Page --------------*/   
 .right {
-    
-    padding: 
+  
+    max-width: 100%
+     
+}
+.left {
+    max-width: 100%;
 }
 
 
@@ -586,33 +609,33 @@
     }
 
     .advarticle {
-    border: 2px solid #6E7315;
+    border: 2px solid #1C020A;
     border-radius: 5px;
-    background-color: #FCFFC0;
+    background-color: #FCBED0;
     padding: 0;
     margin: 1rem;
     }
 
     .advinfo {
-        color: #1E1F03;
+        color: #1C020A;
         font-size: .8rem;
         margin: 2%; 
         padding: .5rem;
     }
   
     .advdescription  {    
-        color: #1E1F03;
+        color: #1C020A;
         padding: 0;
         
     }
 
    .trailname {
-        color: #1E1F03;
+        color: #1C020A;
         margin-bottom: .1rem;
         padding: .1rem;
     }
     section h1 {
-        color: #1E1F03;
+        color: #1C020A;
         margin-bottom: .1rem;
         padding: 1rem 1rem;
     }
