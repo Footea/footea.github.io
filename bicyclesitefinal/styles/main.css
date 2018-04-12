@@ -213,10 +213,10 @@
         padding: .1rem;
     }
 
-.bikeimgage { max-width: 400px;
-            max-height: 300px;
-    
-}
+    .bikeimgage { max-width: 400px;
+                max-height: 300px;
+
+    }
     section h1 {
         color: #1E1F03;
         margin-bottom: .1rem;
@@ -266,6 +266,7 @@
 
 
 /*----- Service Menu section styles -----*/
+
     figure img {
         width: 100%;
         
@@ -296,12 +297,7 @@
             margin: 2%; 
             padding: .5rem;
         }
-        section p:nth-child(2) {
-            font-style: italic;
-            text-align: center;
-            font-size: 1.50rem;
-            margin: 0; 
-        }
+     
 
     .alacarte {
             color: #FCBED0;
@@ -481,6 +477,10 @@
     max-width: 100%;
 }
 
+.eventinfo {
+    font-size: 1.25rem;
+    color: #142A4D;
+}
 
 
 
@@ -528,9 +528,7 @@
         padding: .5rem;
         background-color: #6E7315;
         border-radius: .4em;
-        
-        
-        
+           
     }
 
     label {
@@ -556,16 +554,11 @@
         
     }
 
-   
     .eventchoice {
         color: #1E1F03;
         border: 2px solid #1E1F03;
         
-}
-    
-
-   
-
+    }
     
     .eventmessage {
         width: 100%; 
@@ -747,20 +740,22 @@ ul,li {
     }
 
     aside h1 { 
-        margin: 0 0; 
-        padding: .5rem; 
+        margin: 0 0;
+        font-size: .95rem;
+        padding: .5rem 0 0 0; 
         color: #1C020A;
         font-size: 1rem}
 
     aside p { 
         margin: 0 0; 
-        font-size:;
+        font-size: .8rem;
         padding-bottom: .5rem;
         color: #1C020A;
     }
 
     footer>p {
         color:#FCBED0;
+        font-size: .8rem;
         padding: .75rem;
         margin: 0;
         background-color: #69132C;
