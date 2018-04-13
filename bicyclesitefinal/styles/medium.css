@@ -54,8 +54,10 @@
         margin: 0;
     }
        
-   
-    
+ /*----------- bike Page --------------*/  
+   .bikeimg {
+    max-width: 60%;
+} 
     
 /*----------- Contact Us Page --------------*/
 
@@ -87,15 +89,20 @@
    
   
 /*---------- Event Page ----------*/
+    
+ 
+    
+    
     .right {
-        
-        
+        flex-direction: column;
         text-align: center;
-        width: 30%;
+        width: 100%;
+        margin: 0;
     } 
     .left {
         flex: auto;
-        width: 55%;	
+        width:80%;	
+        margin: 0;
     }
 
 

@@ -26,7 +26,11 @@
     
 
     
-    
+  /*----------- bike Page --------------*/  
+       .bikeimg {
+        max-width: 60%;
+    } 
+     
 
     
 /*--------Thank You Page ----------*/  
@@ -78,10 +82,10 @@
   
     max-width: 35%
      
-}
-.left {
+    }
+    .left {
     max-width: 55%;
-}
+    }
 
 
 

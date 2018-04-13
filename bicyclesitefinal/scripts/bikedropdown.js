@@ -1,6 +1,7 @@
- $(function(){
+
+$(function(){
   
-    
+var dropdownMenu    
     //Slide Effects
    // $('.dropdownMenu > li').hover( function(){
         // <Mouseover

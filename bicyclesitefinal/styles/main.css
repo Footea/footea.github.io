@@ -325,9 +325,10 @@
    
 
      #form-flex {
-        max-width: 64rem;
+         max-width: 64rem;
         margin: auto;
-        
+        display: flex;
+        flex-wrap: wrap;
 	    }
 
 
@@ -389,8 +390,7 @@
         
     }
 
-    .textbox { border: 2px solid #1E1F03;}
-
+    
     .contact p {
         color: #BFD5F6;
         text-align: left;
@@ -407,8 +407,9 @@
     }
 
     
-    input[type="textarea"] {
-        width: 80%; 
+    .textbox {
+        border: 2px solid #1E1F03;
+        max-width: 100%; 
         padding: 1rem;
     }
     
@@ -428,18 +429,7 @@
         box-shadow: 4px 4px 10px #1E1F03;
     }
 
-    input.resetBtn {
-        color: black;
-        border: 1px solid #111;
-        border-radius: 7px;
-        width: 35%;
-        margin: 10px;
-        font-size: 1em;
-        padding: 10px;
-        background: white;
-        box-shadow: 4px 4px 10px #1E1F03;
-        }
-
+ 
 
 
 
@@ -468,25 +458,39 @@
 
 
  /*---------- Events Page --------------*/   
-.right {
-  
-    max-width: 100%
-     
-}
-.left {
-    max-width: 100%;
-}
+    
+    #event-flex {
+        max-width: 64rem;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+	    } 
 
-.eventinfo {
-    font-size: 1.25rem;
-    color: #142A4D;
-}
+
+
+    .right {
+
+        max-width: 100%
+
+    }
+    .left {
+        max-width: 100%;
+    }
+
+    .eventinfo {
+        font-size: 1.25rem;
+        color: #142A4D;
+    }
+    .eventtitle {
+        color: #142A4D;
+        font-size: 1.5rem;
+
+    }
 
 
 
 /*---------- Events Page Form ----------*/  
 
-/*----------- Registration Form --------------*/
 
  /*-----COLUMNS -----*/
    
@@ -495,7 +499,7 @@
         max-width: 64rem;
         margin: auto;
         
-	    }
+    }
 
 
     .contact { 
@@ -508,7 +512,7 @@
     iframe {
         max-width: 200px;
         max-height: 200px
-}
+    }
    
     
 
@@ -582,6 +586,24 @@
     }
 
 
+
+/*--------- Bikes page  --------*/
+
+.dropdownMenu {
+    padding: 0;
+    margin: .5rem;
+    
+}
+
+.bikeimg {
+    max-width: 100%;
+}
+
+.bikename {
+    font-size: 1.5rem;
+    padding:.5rem;
+    margin: 2%;
+}
 
  
 
@@ -719,6 +741,17 @@ ul,li {
 	transform: rotate(90deg);
 }
 
+  /*----------- Reference Page --------------*/
+.referencelist {
+    color: #BFD5F6;
+    margin: 0;
+    padding:0;
+}
+.referencelist li {
+    
+    margin: 0;
+    padding: 0;
+}
 
 
     /*----------- Footer --------------*/
@@ -761,6 +794,9 @@ ul,li {
         background-color: #69132C;
         border-top:  1px solid #1C020A;
     }
+.reference {
+    color: #FCBED0;
+}
 
 
 
