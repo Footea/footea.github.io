@@ -1,4 +1,4 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
 * { box-sizing: border-box;}
 
 
@@ -98,7 +98,7 @@
         font-size: 1.25rem;
     }
 
-    nav ul li:first-child a {}
+    nav ul li:first-child a { list-style-type: none;}
 
 
 
@@ -222,6 +222,8 @@
         margin-bottom: .1rem;
         padding: 1rem 1rem;
     }
+    
+
 
 
 
@@ -230,35 +232,39 @@
 
   
     main section .home-article {
-    display: flex;
-    flex-direction: column;
-    
+        display: flex;
+        flex-direction: column;
         margin: 0;
     
-}
+    }
      
 
     .home-article {
+        max-height: 75%;
         width: 100%;
         margin: 2rem; 
+        padding: 2rem;
         font-family: 'Roboto', sans-serif;
-} 
+    } 
     
 
     .monthlybikeinfo { 
         border: 2px solid #1C020A;
-    border-radius: 5px;
-    background-color: #FCBED0;
-    padding: 0;
-    margin: 1rem;
-        
+        border-radius: 5px;
+        background-color: #FCBED0;
+        padding: 0;
+        font-size: .5rem;
+        margin: 1rem;
+          
         font-family: 'Roboto', sans-serif;
-}
+    }
 
     .homebikefig {
         max-width: 100%;
         margin: 0;
     }
+
+    .advinfo { padding: .2rem; font-family: 'Roboto', sans-serif;}
 
 
     
@@ -296,6 +302,7 @@
             font-size: 1.2rem;
             margin: 2%; 
             padding: .5rem;
+            font-family: 'Roboto', sans-serif;
         }
      
 
@@ -741,17 +748,17 @@ ul,li {
 	transform: rotate(90deg);
 }
 
-  /*----------- Reference Page --------------*/
-.referencelist {
-    color: #BFD5F6;
-    margin: 0;
-    padding:0;
-}
-.referencelist li {
-    
-    margin: 0;
-    padding: 0;
-}
+      /*----------- Reference Page --------------*/
+    .referencelist {
+        color: #BFD5F6;
+        margin: 0;
+        padding: 2rem;
+    }
+    .referencelist li {
+
+        margin: 0;
+        padding: 0;
+    }
 
 
     /*----------- Footer --------------*/
@@ -766,7 +773,9 @@ ul,li {
     }
     .footer-bar { 
         padding: .8rem 3rem; 
-        border-top:  2px solid #1C020A;}
+        border-top:  2px solid #1C020A;
+        list-style-type: none;
+    }
 
     .footer-info {
         border-top:  2px solid #1C020A;
@@ -794,8 +803,9 @@ ul,li {
         background-color: #69132C;
         border-top:  1px solid #1C020A;
     }
-.reference {
+.lastpage {
     color: #FCBED0;
+    list-style-type: none;
 }
 
 

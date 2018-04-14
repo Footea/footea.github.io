@@ -89,9 +89,12 @@
 
 
 
-
-
     
+
+    .home-article {
+        max-height: 25rem;
+    
+    }
 
 
     /*----------- FOOTER --------------*/
